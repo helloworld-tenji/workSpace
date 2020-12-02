@@ -1,0 +1,92 @@
+/*
+*作成者:于　海洋
+*作成日:２０２０−１２−２
+*改修日:
+*/
+body{
+        background-image: url(../images/background.jpg);
+        background-size: cover;
+}
+
+.title{
+      height: 30px;
+      padding-top: 80px;
+}
+
+h2{
+        font-size: 30px;
+        color: black;
+        position: relative;
+        top: 50px;
+        text-align: center;
+        font-family: 'Droid Serif', serif;
+        
+}
+
+
+.login {
+        display: block;
+        background: #E1E1E1;
+        width: 300px;
+        height: 110px;
+        margin: 0 auto;
+        
+        top: 200px; /*偏移*/
+        margin-top: 150px; 
+        border-radius: 25px 25px 0px 0px;
+        -webkit-border-radius:  25px 25px 0px 0px;
+        -moz-border-radius: 25px 25px 0px 0px;
+        -o-border-radius: 25px 25px 0px 0px;
+        padding: 40px 60px;
+      }
+.login p{
+        margin-top:10px;
+        color: black;
+        font-size: 20px;
+        font-weight: 100;
+        font-family: 'Droid Serif';
+        font-weight: bold;
+}
+
+.login input[type="text"]{
+        border:0px;
+        border-radius:9px;
+        height: 10px;
+        padding: 12px 20px;
+        font-size: 18px;
+        width: 85%;
+        position: relative;
+        top: 20%; /*偏移*/
+}
+
+
+.logib-lower{
+        background: #94bdbd;
+        width: 300px;
+        height: 15px;
+        margin: 0 auto;
+        position: relative;
+        top: 50%; /*偏移*/
+        border-radius: 0px 0px 25px 25px;
+        padding: 40px 60px;
+        -webkit-border-radius:  0px 0px 25px 25px;
+        -moz-border-radius: 0px 0px 25px 25px;
+        -o-border-radius: 0px 0px 25px 25px;
+        text-align: center;
+        
+}       
+
+.copyright {
+        padding: 150px 0px 0px 0px;
+        text-align: center;
+      }
+      .copyright p {
+        font-size: 15px;
+        font-weight: 400;
+        color: #fff;
+      }
+      .copyright p a{
+        font-size: 15px;
+        font-weight: 400;
+        color: #E15748;
+      }

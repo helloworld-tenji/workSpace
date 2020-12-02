@@ -2,22 +2,10 @@
 <html>
 
 <head>
-    <title>Home</title>
+    <title>天時情報</title>
+    <link rel="icon" href="" type="image/gif" />
     <!-- Custom Theme files -->
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- Custom Theme files -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords"
-        content="Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-    <!--Google Fonts-->
-    <link
-        href='http://fonts.useso.com/css?family=Roboto:500,900italic,900,400italic,100,700italic,300,700,500italic,100italic,300italic,400'
-        rel='stylesheet' type='text/css'>
-    <link href='http://fonts.useso.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
-        type='text/css'>
-    <!--Google Fonts-->
 </head>
 
 <body>
@@ -31,20 +19,20 @@
             </form>
 
             <div>
-                <input type="radio" checked="checked">社員IDを保存
+                <input type="radio" checked="false">社員IDを保存
             </div>
+
             <div class="forgot">
                 <input type="submit" value="ログイン">
             </div>
 
-
         </div>
         <div class="login-bottom">
-            <a onclick="pop()" color='#fff'>パスワード忘れた方</a>
+            <a onclick="pop()" onmouseover="areaColor(this)" onmouseleave="over(this)">パスワード忘れた方</a>
         </div>
     </div>
-    <div class="copyright">
-        <p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank"
+    <div class=" copyright">
+        <p>Copyright ; 2015.Company name All rights reserved.<a target="_blank"
                 href="https://ten-ji.co.jp/">天時情報システム</a></p>
     </div>
 
@@ -53,6 +41,20 @@
         function pop() {
             alert("");
         }
+
+        //マウス止まるの場合は色を変化します
+        function areaColor(x) {
+            x.style.backgroundColor = "red";
+            x.style.color = "white";
+        }
+
+        //マウス外す時は色戻ります
+        function over(x) {
+            x.style.backgroundColor = "";
+            x.style.color = "";
+        }
+
+
     </script>
 
 </body>
