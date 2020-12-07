@@ -1,0 +1,43 @@
+.lookup {
+    position: absolute;
+    left: 1%;
+    bottom: 0;
+    top: 5%;
+
+}
+
+.lookup select {
+    width: 120px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.lookup input[type="text"] {
+    width: 120px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.lookup input[type="button"] {
+    width: 120px;
+    height: 25px;
+    line-height: 25px;
+    float: right 10px;
+    vertical-align: middle;
+}
+
+.lookup h2 {
+    font-family: 'Droid Serif', serif;
+}
+
+
+
+.lookup-lower {
+
+    position: absolute;
+    left: 1%;
+    bottom: 0;
+    top: 20%;
+
+
+}
