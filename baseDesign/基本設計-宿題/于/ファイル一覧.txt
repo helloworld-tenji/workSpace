@@ -1,11 +1,895 @@
-code
+Code
+.
+├── assets
+│   └── css
+│       └── demo.css
 ├── css
-│   └── login.css
+│   ├── font.css
+│   ├── login.css
+│   ├── torihikisaki-list.css
+│   └── xadmin.css
 ├── fonts
+├── home.html
 ├── images
 │   └── background.jpg
+├── index.html
 ├── js
+│   ├── from.js
+│   └── xadmin.js
+├── jsonData
+│   └── testData.json
 ├── lib
+│   ├── amcharts4
+│   │   ├── CHANGELOG.md
+│   │   ├── LICENSE
+│   │   ├── LICENSE-3RD-PARTY.md
+│   │   ├── README.md
+│   │   ├── charts.js
+│   │   ├── charts.js.map
+│   │   ├── core.js
+│   │   ├── core.js.map
+│   │   ├── deps
+│   │   │   ├── canvg.js
+│   │   │   ├── canvg.js.map
+│   │   │   ├── pdfmake.js
+│   │   │   ├── pdfmake.js.map
+│   │   │   ├── xlsx.js
+│   │   │   └── xlsx.js.map
+│   │   ├── examples
+│   │   │   ├── javascript
+│   │   │   │   ├── 100%-stacked-column-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── adding-live-data
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── amcharts3
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   ├── index.js
+│   │   │   │   │   └── v3.js
+│   │   │   │   ├── animating-along-the-line-series
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── bar-chart-race
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── base
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── bubble-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── candlestick-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── changing-series-apppearance
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── changing-tree-map-data
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── chord-diagram
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── chord-diagram-non-ribbon
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── chord-friends-kisses
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   ├── index.js
+│   │   │   │   │   └── whokissed.png
+│   │   │   │   ├── clock
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── column-chart-with-axis-break
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── column-chart-with-images-as-bullets
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── chandler.jpg
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   ├── index.js
+│   │   │   │   │   ├── joey.jpg
+│   │   │   │   │   ├── monica.jpg
+│   │   │   │   │   ├── phoebe.jpg
+│   │   │   │   │   ├── rachel.jpg
+│   │   │   │   │   └── ross.jpg
+│   │   │   │   ├── columns-with-pies-inside
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── countries-morphing-to-pie-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── curved-column-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── cylinder-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── data-grouping-50K
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── date-based-radar
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── day-night-map
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── donut-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── drag-and-change-values
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── dragging-pie-slices
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── drill-down-map
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── drill-down-tree-map
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   ├── index.js
+│   │   │   │   │   └── logos
+│   │   │   │   │       ├── acura.png
+│   │   │   │   │       ├── audi.png
+│   │   │   │   │       ├── bmw.png
+│   │   │   │   │       ├── buick.png
+│   │   │   │   │       ├── cadillac.png
+│   │   │   │   │       ├── chevrolet.png
+│   │   │   │   │       ├── chrysler.png
+│   │   │   │   │       ├── dodge.png
+│   │   │   │   │       ├── ford.png
+│   │   │   │   │       ├── gmc.png
+│   │   │   │   │       ├── honda.png
+│   │   │   │   │       ├── hyundai.png
+│   │   │   │   │       ├── infiniti.png
+│   │   │   │   │       ├── jeep.png
+│   │   │   │   │       ├── kia.png
+│   │   │   │   │       ├── lexus.png
+│   │   │   │   │       ├── lincoln.png
+│   │   │   │   │       ├── mazda.png
+│   │   │   │   │       ├── mercedes-benz.png
+│   │   │   │   │       ├── mitsubishi.png
+│   │   │   │   │       ├── nissan.png
+│   │   │   │   │       ├── other.png
+│   │   │   │   │       ├── subaru.png
+│   │   │   │   │       ├── toyota.png
+│   │   │   │   │       └── volkswagen.png
+│   │   │   │   ├── dumbbell-plot
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── dumbbell-plot-horizontal
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── duration-axis
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── error-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── fill-between-lines-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── force-directed-creating-links
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── force-directed-network
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── force-directed-tree
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── force-directed-tree-expandable
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── funnel-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── funnel-chart-horizontal
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── gantt-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── gauge-with-bands
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── geo-heat-map
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── heat-map
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── heat-map-circles
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── heat-map-radar
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── horizontally-stacked-axes
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── line-different-ups-downs
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── map-line-gauge-mix
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── bang.png
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   ├── index.js
+│   │   │   │   │   └── rocket.svg
+│   │   │   │   ├── morphing-countries
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── multiple-axes-date-based-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── multiple-series-map-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── non-chart-usage
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── ohlc-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── packed-circles
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── pictorial-bar-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── pictorial-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── pictorial-stacked-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── pictorial-stacked-chart-horizontal
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── polar-area-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── population-pyramid
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── pyramid-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── radar-chart-with-axis-break
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── radar-timeline-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── radial-bar-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── real-time-data-sorting
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── rotating-globe
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── rotating-globe-with-circles
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── sankey-diagram-with-animated-bullets
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── semi-circle-donut-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── simple-3D-pie-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── simple-bar-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── simple-column-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── simple-gauge
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── simple-line-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── simple-map-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── simple-pie-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── simple-radar-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── simple-sankey-diagram
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── simple-tree-map
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── stacked-3D-column-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── stacked-area-radar-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── stacked-column-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── step-count-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── step-line-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── step-line-no-risers-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── stock-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── stock-comparing-values
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── sunburst
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── syncing-cursors-and-zoom
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── timeline
+│   │   │   │   │   ├── bent-gantt-chart
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── index.css
+│   │   │   │   │   │   ├── index.html
+│   │   │   │   │   │   └── index.js
+│   │   │   │   │   ├── custom-shape-chart
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── index.css
+│   │   │   │   │   │   ├── index.html
+│   │   │   │   │   │   └── index.js
+│   │   │   │   │   ├── fishbone-timeline
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── index.css
+│   │   │   │   │   │   ├── index.html
+│   │   │   │   │   │   └── index.js
+│   │   │   │   │   ├── infinity-chart
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── index.css
+│   │   │   │   │   │   ├── index.html
+│   │   │   │   │   │   ├── index.js
+│   │   │   │   │   │   └── moon.png
+│   │   │   │   │   ├── road-chart
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── index.css
+│   │   │   │   │   │   ├── index.html
+│   │   │   │   │   │   └── index.js
+│   │   │   │   │   ├── serpentine-gantt-horizontal
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── index.css
+│   │   │   │   │   │   ├── index.html
+│   │   │   │   │   │   └── index.js
+│   │   │   │   │   ├── serpentine-step-line
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── index.css
+│   │   │   │   │   │   ├── index.html
+│   │   │   │   │   │   └── index.js
+│   │   │   │   │   ├── serpentine-timeline
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── index.css
+│   │   │   │   │   │   ├── index.html
+│   │   │   │   │   │   ├── index.js
+│   │   │   │   │   │   ├── monica.jpg
+│   │   │   │   │   │   └── rachel.jpg
+│   │   │   │   │   ├── spiral-bar-chart
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── index.css
+│   │   │   │   │   │   ├── index.html
+│   │   │   │   │   │   └── index.js
+│   │   │   │   │   ├── spiral-chart
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── index.css
+│   │   │   │   │   │   ├── index.html
+│   │   │   │   │   │   └── index.js
+│   │   │   │   │   ├── spiral-gantt-chart
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── index.css
+│   │   │   │   │   │   ├── index.html
+│   │   │   │   │   │   └── index.js
+│   │   │   │   │   ├── stadium-track-chart
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── chandler.jpg
+│   │   │   │   │   │   ├── index.css
+│   │   │   │   │   │   ├── index.html
+│   │   │   │   │   │   ├── index.js
+│   │   │   │   │   │   ├── joey.jpg
+│   │   │   │   │   │   ├── monica.jpg
+│   │   │   │   │   │   ├── phoebe.jpg
+│   │   │   │   │   │   ├── rachel.jpg
+│   │   │   │   │   │   └── ross.jpg
+│   │   │   │   │   └── timeline
+│   │   │   │   │       ├── README.md
+│   │   │   │   │       ├── dance.svg
+│   │   │   │   │       ├── index.css
+│   │   │   │   │       ├── index.html
+│   │   │   │   │       ├── index.js
+│   │   │   │   │       ├── timeline0.svg
+│   │   │   │   │       ├── timeline1.svg
+│   │   │   │   │       ├── timeline2.svg
+│   │   │   │   │       ├── timeline3.svg
+│   │   │   │   │       ├── timeline4.svg
+│   │   │   │   │       ├── timeline5.svg
+│   │   │   │   │       ├── timeline6.svg
+│   │   │   │   │       └── timeline7.svg
+│   │   │   │   ├── triangle-column-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── variable-angle-radar-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── variable-height-3D-pie-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── variable-radius-pie-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── venn-diagram
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── venn-diagram-with-patterns
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── vertical-sankey-diagram
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── vertically-stacked-axes
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── waterfall-chart
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── word-cloud
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── word-cloud-changing-data
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── work-hours-map
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── index.css
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.js
+│   │   │   │   └── xy-error-chart
+│   │   │   │       ├── README.md
+│   │   │   │       ├── index.css
+│   │   │   │       ├── index.html
+│   │   │   │       └── index.js
+│   │   │   └── json
+│   │   │       ├── candlestick-series
+│   │   │       │   ├── README.md
+│   │   │       │   ├── index.css
+│   │   │       │   ├── index.html
+│   │   │       │   └── index.js
+│   │   │       ├── changing-series-apppearance
+│   │   │       │   ├── README.md
+│   │   │       │   ├── index.css
+│   │   │       │   ├── index.html
+│   │   │       │   └── index.js
+│   │   │       ├── columns-with-pies-inside
+│   │   │       │   ├── README.md
+│   │   │       │   ├── index.css
+│   │   │       │   ├── index.html
+│   │   │       │   └── index.js
+│   │   │       ├── multiple-series-map-chart
+│   │   │       │   ├── README.md
+│   │   │       │   ├── index.css
+│   │   │       │   ├── index.html
+│   │   │       │   └── index.js
+│   │   │       ├── simple-3D-pie-chart
+│   │   │       │   ├── README.md
+│   │   │       │   ├── index.css
+│   │   │       │   ├── index.html
+│   │   │       │   └── index.js
+│   │   │       ├── simple-bar-chart
+│   │   │       │   ├── README.md
+│   │   │       │   ├── index.css
+│   │   │       │   ├── index.html
+│   │   │       │   └── index.js
+│   │   │       ├── simple-column-chart
+│   │   │       │   ├── README.md
+│   │   │       │   ├── index.css
+│   │   │       │   ├── index.html
+│   │   │       │   └── index.js
+│   │   │       ├── simple-gauge
+│   │   │       │   ├── README.md
+│   │   │       │   ├── index.css
+│   │   │       │   ├── index.html
+│   │   │       │   └── index.js
+│   │   │       ├── simple-line-chart
+│   │   │       │   ├── README.md
+│   │   │       │   ├── index.css
+│   │   │       │   ├── index.html
+│   │   │       │   └── index.js
+│   │   │       ├── simple-map-chart
+│   │   │       │   ├── README.md
+│   │   │       │   ├── index.css
+│   │   │       │   ├── index.html
+│   │   │       │   └── index.js
+│   │   │       ├── simple-pie-chart
+│   │   │       │   ├── README.md
+│   │   │       │   ├── index.css
+│   │   │       │   ├── index.html
+│   │   │       │   └── index.js
+│   │   │       ├── simple-pie-chart-rounded-corners
+│   │   │       │   ├── README.md
+│   │   │       │   ├── index.css
+│   │   │       │   ├── index.html
+│   │   │       │   └── index.js
+│   │   │       ├── simple-radar-chart
+│   │   │       │   ├── README.md
+│   │   │       │   ├── index.css
+│   │   │       │   ├── index.html
+│   │   │       │   └── index.js
+│   │   │       ├── simple-sankey-diagram
+│   │   │       │   ├── README.md
+│   │   │       │   ├── index.css
+│   │   │       │   ├── index.html
+│   │   │       │   └── index.js
+│   │   │       ├── simple-tree-map
+│   │   │       │   ├── README.md
+│   │   │       │   ├── index.css
+│   │   │       │   ├── index.html
+│   │   │       │   └── index.js
+│   │   │       └── timeline
+│   │   │           ├── README.md
+│   │   │           ├── dance.svg
+│   │   │           ├── index.css
+│   │   │           ├── index.html
+│   │   │           ├── index.js
+│   │   │           ├── timeline0.svg
+│   │   │           ├── timeline1.svg
+│   │   │           ├── timeline2.svg
+│   │   │           ├── timeline3.svg
+│   │   │           ├── timeline4.svg
+│   │   │           ├── timeline5.svg
+│   │   │           ├── timeline6.svg
+│   │   │           └── timeline7.svg
+│   │   ├── lang
+│   │   │   ├── ar.js
+│   │   │   ├── ar.js.map
+│   │   │   ├── bs_BA.js
+│   │   │   ├── bs_BA.js.map
+│   │   │   ├── ca_ES.js
+│   │   │   ├── ca_ES.js.map
+│   │   │   ├── cs_CZ.js
+│   │   │   ├── cs_CZ.js.map
+│   │   │   ├── da_DK.js
+│   │   │   ├── da_DK.js.map
+│   │   │   ├── de_CH.js
+│   │   │   ├── de_CH.js.map
+│   │   │   ├── de_DE.js
+│   │   │   ├── de_DE.js.map
+│   │   │   ├── el_GR.js
+│   │   │   ├── el_GR.js.map
+│   │   │   ├── en.js
+│   │   │   ├── en.js.map
+│   │   │   ├── en_CA.js
+│   │   │   ├── en_CA.js.map
+│   │   │   ├── en_US.js
+│   │   │   ├── en_US.js.map
+│   │   │   ├── es_ES.js
+│   │   │   ├── es_ES.js.map
+│   │   │   ├── et_EE.js
+│   │   │   ├── et_EE.js.map
+│   │   │   ├── fi_FI.js
+│   │   │   ├── fi_FI.js.map
+│   │   │   ├── fr_FR.js
+│   │   │   ├── fr_FR.js.map
+│   │   │   ├── he_IL.js
+│   │   │   ├── he_IL.js.map
+│   │   │   ├── hi_IN.js
+│   │   │   ├── hi_IN.js.map
+│   │   │   ├── hr_HR.js
+│   │   │   ├── hr_HR.js.map
+│   │   │   ├── hu_HU.js
+│   │   │   ├── hu_HU.js.map
+│   │   │   ├── id_ID.js
+│   │   │   ├── id_ID.js.map
+│   │   │   ├── it_IT.js
+│   │   │   ├── it_IT.js.map
+│   │   │   ├── ja_JP.js
+│   │   │   ├── ja_JP.js.map
+│   │   │   ├── ko_KR.js
+│   │   │   ├── ko_KR.js.map
+│   │   │   ├── lt_LT.js
+│   │   │   ├── lt_LT.js.map
+│   │   │   ├── lv_LV.js
+│   │   │   ├── lv_LV.js.map
+│   │   │   ├── nb_NO.js
+│   │   │   ├── nb_NO.js.map
+│   │   │   ├── nl_NL.js
+│   │   │   ├── nl_NL.js.map
+│   │   │   ├── pl_PL.js
+│   │   │   ├── pl_PL.js.map
+│   │   │   ├── pt_BR.js
+│   │   │   ├── pt_BR.js.map
+│   │   │   ├── pt_PT.js
+│   │   │   ├── pt_PT.js.map
+│   │   │   ├── ro_RO.js
+│   │   │   ├── ro_RO.js.map
+│   │   │   ├── ru_RU.js
+│   │   │   ├── ru_RU.js.map
+│   │   │   ├── sl_SL.js
+│   │   │   ├── sl_SL.js.map
+│   │   │   ├── sr_RS.js
+│   │   │   ├── sr_RS.js.map
+│   │   │   ├── sv_SE.js
+│   │   │   ├── sv_SE.js.map
+│   │   │   ├── th_TH.js
+│   │   │   ├── th_TH.js.map
+│   │   │   ├── tr_TR.js
+│   │   │   ├── tr_TR.js.map
+│   │   │   ├── uk_UA.js
+│   │   │   ├── uk_UA.js.map
+│   │   │   ├── vi_VN.js
+│   │   │   ├── vi_VN.js.map
+│   │   │   ├── zh_Hans.js
+│   │   │   ├── zh_Hans.js.map
+│   │   │   ├── zh_Hant.js
+│   │   │   └── zh_Hant.js.map
+│   │   ├── maps.js
+│   │   ├── maps.js.map
+│   │   ├── plugins
+│   │   │   ├── annotation.js
+│   │   │   ├── annotation.js.map
+│   │   │   ├── bullets.js
+│   │   │   ├── bullets.js.map
+│   │   │   ├── forceDirected.js
+│   │   │   ├── forceDirected.js.map
+│   │   │   ├── overlapBuster.js
+│   │   │   ├── overlapBuster.js.map
+│   │   │   ├── rangeSelector.js
+│   │   │   ├── rangeSelector.js.map
+│   │   │   ├── regression.js
+│   │   │   ├── regression.js.map
+│   │   │   ├── sliceGrouper.js
+│   │   │   ├── sliceGrouper.js.map
+│   │   │   ├── sunburst.js
+│   │   │   ├── sunburst.js.map
+│   │   │   ├── timeline.js
+│   │   │   ├── timeline.js.map
+│   │   │   ├── venn.js
+│   │   │   ├── venn.js.map
+│   │   │   ├── wordCloud.js
+│   │   │   └── wordCloud.js.map
+│   │   └── themes
+│   │       ├── amcharts.js
+│   │       ├── amcharts.js.map
+│   │       ├── amchartsdark.js
+│   │       ├── amchartsdark.js.map
+│   │       ├── animated.js
+│   │       ├── animated.js.map
+│   │       ├── dark.js
+│   │       ├── dark.js.map
+│   │       ├── dataviz.js
+│   │       ├── dataviz.js.map
+│   │       ├── frozen.js
+│   │       ├── frozen.js.map
+│   │       ├── kelly.js
+│   │       ├── kelly.js.map
+│   │       ├── material.js
+│   │       ├── material.js.map
+│   │       ├── microchart.js
+│   │       ├── microchart.js.map
+│   │       ├── moonrisekingdom.js
+│   │       ├── moonrisekingdom.js.map
+│   │       ├── patterns.js
+│   │       ├── patterns.js.map
+│   │       ├── spiritedaway.js
+│   │       └── spiritedaway.js.map
 │   └── layui
 │       ├── css
 │       │   ├── layui.css
@@ -127,4 +1011,5 @@ code
 │       └── layui.js
 ├── login.html
 ├── test.html
-└── 新建 XLS 工作表.xls
+├── torihikisaki-list.html
+└── XLS 工作表.xls

@@ -7,7 +7,9 @@
     <title>天時情報営業管理システム</title>
     <link rel="stylesheet" href="./css/login.css" media="all">
     <link rel="stylesheet" href="./lib/layui/css/layui.css">
-    <script src="./lib/layui/layui.js" charset="UTF-8"></script>
+    <script src="./js/login.js"></script>
+    <script src="./lib/jquery-3.5.1.min.js"></script>
+
 
     <!-- logo -->
     <!-- <link rel="" href=""> -->
@@ -19,11 +21,14 @@
     </div>
     <div class="login">
         <p>社員ID</p>
-        <input type="text" placeholder="社員IDを入力してください">
+        <input id="userID" type="text" placeholder="社員IDを入力してください">
     </div>
 
     <div class="logib-lower">
-        <input type="button" class="layui-btn layui-btn-radius " value="ログイン">
+        <form action="index.html">
+            <input type="submit" class="layui-btn layui-btn-radius " value="ログイン">
+        </form>
+    </div>
     </div>
 
     <div class=" copyright">

@@ -1,0 +1,25 @@
+{
+    "code":0,
+    "msg":"",
+    "count":1000,
+    "data":[
+        {
+            "id":1,
+            "username":"天時情報システム",
+            "customerNameKana":"天時情報システム",
+            "bp":"個人事業者",
+            "streetAddress":"東京都八丁堀",
+            "tel":"123-4567-8900",
+            "mail":"xxxx@ten-ji.co.jp",
+            "businessField":"金融",
+            "businessContent":"システムズ開発",
+            "remarks":"なし",
+            "responsibleParty":"于",
+            "createdDate":"2020-12-07",
+            "author":"于",
+            "updateDate":"2020-12-07",
+            "changer":"于"
+            
+
+        }
+    ]}
