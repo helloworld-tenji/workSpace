@@ -46,6 +46,7 @@
         this.set_data(title, url, id);
         element.tabChange('xbs_tab', id);
 
+
     }
 
     Xadmin.prototype.del_tab = function(id) {
@@ -75,36 +76,85 @@
          * @return {[type]}        [description]
          */
     Xadmin.prototype.open = function(title, url, w, h, full) {
-            if (title == null || title == '') {
-                var title = false;
-            };
-            if (url == null || url == '') {
-                var url = "404.html";
-            };
-            if (w == null || w == '') {
-                var w = ($(window).width() * 0.9);
-            };
-            if (h == null || h == '') {
-                var h = ($(window).height() - 50);
-            };
-            var index = layer.open({
-                type: 2,
-                area: [w + 'px', h + 'px'],
-                fix: false, //不固定
-                maxmin: true,
-                shadeClose: true,
-                shade: 0.4,
-                title: title,
-                content: url
-            });
-            if (full) {
-                layer.full(index);
-            }
+        if (title == null || title == '') {
+            var title = false;
+        };
+        if (url == null || url == '') {
+            var url = "404.html";
+        };
+        if (w == null || w == '') {
+            var w = ($(window).width() * 0.9);
+        };
+        if (h == null || h == '') {
+            var h = ($(window).height() - 50);
+        };
+        var index = layer.open({
+            type: 2,
+            area: [w + 'px', h + 'px'],
+            fix: false, //不固定
+            maxmin: true,
+            shadeClose: true,
+            shade: 0.4,
+            title: title,
+            content: url
+        });
+        if (full) {
+            layer.full(index);
         }
-        /**
-         * [close 关闭弹出层]
-         * @return {[type]} [description]
-         */
+    }
+
+
+
+
+    Xadmin.prototype.opene = function(title, url, w, h, full) {
+        if (title == null || title == '') {
+            var title = false;
+        };
+        if (url == null || url == '') {
+            var url = "404.html";
+        };
+        if (w == null || w == '') {
+            var w = ($(window).width() * 0.9);
+        };
+        if (h == null || h == '') {
+            var h = ($(window).height() - 50);
+        };
+        var index = layer.open({
+            type: 2,
+            area: [w + 'px', h + 'px'],
+            fix: false, //不固定
+            maxmin: true,
+            shadeClose: true,
+            shade: 0.4,
+            title: title,
+            content: url
+        });
+        if (full) {
+            layer.full(index);
+        }
+
+        var id = md5(url); //md5每个url
+
+        //重复点击
+        for (var i = 0; i < $('.x-iframe').length; i++) {
+            if ($('.x-iframe').eq(i).attr('tab-id') == id) {
+                element.tabChange('xbs_tab', id);
+                if (is_refresh)
+                    $('.x-iframe').eq(i).attr("src", $('.x-iframe').eq(i).attr('src'));
+                return;
+            }
+        };
+
+        this.add_lay_tab(title, url, id);
+        this.set_data(title, url, id);
+        element.tabChange('xbs_tab', id);
+    }
+
+
+    /**
+     * [close 关闭弹出层]
+     * @return {[type]} [description]
+     */
     Xadmin.prototype.close = function() {
         var index = parent.layer.getFrameIndex(window.name);
         parent.layer.close(index);
