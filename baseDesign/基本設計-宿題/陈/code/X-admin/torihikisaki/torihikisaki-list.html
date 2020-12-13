@@ -19,7 +19,107 @@
 
 <body>
 
+    <div class="layui-layout layui-layout-admin ">
+        <div class="layui-header ">
+            <div class="layui-logo">
+                <a href="" style="font-size :30px; color:white">営業システム</a> </div>
 
+
+            <ul class="layui-nav layui-layout-right ">
+                <li class="layui-nav-item" 　>
+                    <a href="javascript:;">
+                       admin
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">設定</a></dd>
+                        <dd><a href="">ログアウト</a></dd>
+                    </dl>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="layui-side ">
+            <div class="layui-side-scroll">
+
+                <ul class="layui-nav layui-nav-tree " lay-filter="">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">取引先照会</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="../matter/matter-list.html">案件照会</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+
+            </div>
+
+        </div>
+
+
+    </div>
     <div class="search">
 
         <div class="layui-inline layui-show-xs-block">
@@ -33,248 +133,217 @@
     <div class="btn1">
 
         <button class="layui-btn layui-btn-normal" id="cuyika">取引先追加</button>
-    </div>
-    <hr>
-    <div clsss="tab" style="width: 2000px;">
-        <table class="layui-table" id="tab1" lay-size="sm">
-            <tr class="layui-btn-normal">
-                <th>ID</th>
-                <th>取引先名</th>
-                <th>取引先名カナ</th>
-                <th>BP区分</th>
-                <th>住所</th>
-                <th>Tel</th>
-                <th>Mail</th>
-                <th>Fax</th>
-                <th>業務分野</th>
-                <th>業務内容</th>
-                <th>備考</th>
-                <th>担当者CD</th>
-                <th>作成日時</th>
-                <th>作成者</th>
-                <th>更新日時</th>
-                <th>更新者</th>
-                <th>操作</th>
+        <hr>
+        <div class="form-group col-sm-12" id="tab1">
+            <table class="layui-hide" lay-filter="jqGridFilter"></table>
 
 
+        </div>
+        <script type="text/html" id="barDemo">
+            <a class="layui-btn layui-btn-xs layui-btn-normal" lay-event="edit" id="alter">編集</a>
+            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del" id="delete">削除</a>
+        </script>
 
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>大山</td>
-                <td>オオヤマ</td>
-                <td>個人事業者</td>
-                <td>東京都</td>
-                <td>08048782265</td>
-                <td>ch668822@gmail.com</td>
-                <td>xxxx-xxxx</td>
-                <td>IT</td>
-                <td>新規作成</td>
-                <td>なし</td>
-                <td>001</td>
-                <td>2020/12/04</td>
-                <td>陳</td>
-                <td>2020/12/04</td>
-                <td>陳</td>
+        <script src="/static/build/layui.js"></script>
 
-                <td> <button class="layui-btn layui-btn-normal" id="alter">編集</button> <button class="layui-btn layui-btn-danger" id="delete">削除</button> </td>
-            </tr>
-            <td>1</td>
-            <td>大山</td>
-            <td>オオヤマ</td>
-            <td>個人事業者</td>
-            <td>東京都</td>
-            <td>08048782265</td>
-            <td>ch668822@gmail.com</td>
-            <td>xxxx-xxxx</td>
-            <td>IT</td>
-            <td>新規作成</td>
-            <td>なし</td>
-            <td>001</td>
-            <td>2020/12/04</td>
-            <td>陳</td>
-            <td>2020/12/04</td>
-            <td>陳</td>
+        <script>
+            layui.use('table', function() {
+                table = layui.table;
+                table.render({
+                    elem: '#tab1',
+                    height: 400,
 
-            <td> <button class="layui-btn layui-btn-normal" id="alter">編集</button> <button class="layui-btn layui-btn-danger" id="delete">削除</button> </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>大山</td>
-                <td>オオヤマ</td>
-                <td>個人事業者</td>
-                <td>東京都</td>
-                <td>08048782265</td>
-                <td>ch668822@gmail.com</td>
-                <td>xxxx-xxxx</td>
-                <td>IT</td>
-                <td>新規作成</td>
-                <td>なし</td>
-                <td>001</td>
-                <td>2020/12/04</td>
-                <td>陳</td>
-                <td>2020/12/04</td>
-                <td>陳</td>
+                    totalRow: true,
+                    cols: [
+                        [{
+                            field: 'id',
+                            title: 'ID',
+                            width: 50,
 
-                <td> <button class="layui-btn layui-btn-normal" id="alter">編集</button> <button class="layui-btn layui-btn-danger" id="delete">削除</button> </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>大山</td>
-                <td>オオヤマ</td>
-                <td>個人事業者</td>
-                <td>東京都</td>
-                <td>08048782265</td>
-                <td>ch668822@gmail.com</td>
-                <td>xxxx-xxxx</td>
-                <td>IT</td>
-                <td>新規作成</td>
-                <td>なし</td>
-                <td>001</td>
-                <td>2020/12/04</td>
-                <td>陳</td>
-                <td>2020/12/04</td>
-                <td>陳</td>
-                <td> <button class="layui-btn layui-btn-normal" id="alter">編集</button> <button class="layui-btn layui-btn-danger" id="delete">削除</button> </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>大山</td>
-                <td>オオヤマ</td>
-                <td>個人事業者</td>
-                <td>東京都</td>
-                <td>08048782265</td>
-                <td>ch668822@gmail.com</td>
-                <td>xxxx-xxxx</td>
-                <td>IT</td>
-                <td>新規作成</td>
-                <td>なし</td>
-                <td>001</td>
-                <td>2020/12/04</td>
-                <td>陳</td>
-                <td>2020/12/04</td>
-                <td>陳</td>
-                <td> <button class="layui-btn layui-btn-normal" id="alter">編集</button> <button class="layui-btn layui-btn-danger" id="delete">削除</button> </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>大山</td>
-                <td>オオヤマ</td>
-                <td>個人事業者</td>
-                <td>東京都</td>
-                <td>08048782265</td>
-                <td>ch668822@gmail.com</td>
-                <td>xxxx-xxxx</td>
-                <td>IT</td>
-                <td>新規作成</td>
-                <td>なし</td>
-                <td>001</td>
-                <td>2020/12/04</td>
-                <td>陳</td>
-                <td>2020/12/04</td>
-                <td>陳</td>
+                        }, {
+                            field: 'username',
+                            title: '取引先名',
+                            width: 120
+                        }, {
+                            field: 'username2',
+                            title: '取引先名',
+                            width: 120
+                        }, {
+                            field: 'bp',
+                            title: 'BP区分',
+                            minWidth: 150
 
-                <td> <button class="layui-btn layui-btn-normal" id="alter">編集</button> <button class="layui-btn layui-btn-danger" id="delete">削除</button> </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>大山</td>
-                <td>オオヤマ</td>
-                <td>個人事業者</td>
-                <td>東京都</td>
-                <td>08048782265</td>
-                <td>ch668822@gmail.com</td>
-                <td>xxxx-xxxx</td>
-                <td>IT</td>
-                <td>新規作成</td>
-                <td>なし</td>
-                <td>001</td>
-                <td>2020/12/04</td>
-                <td>陳</td>
-                <td>2020/12/04</td>
-                <td>陳</td>
+                        }, {
+                            field: 'adress',
+                            title: '住所',
+                            minWidth: 160
+                        }, {
+                            field: 'tel',
+                            title: 'Tel',
+                            event: 'setSign',
+                            width: 120
+                        }, {
+                            field: 'mail',
+                            title: 'Mail',
+                            width: 120
+                        }, {
+                            field: 'fax',
+                            title: 'Fax',
+                            minWidth: 160
+                        }, {
+                            field: 'bf',
+                            title: '業務分野',
+                            event: 'setSign',
+                            width: 100
+                        }, {
+                            field: 'bc',
+                            title: '業務内容',
+                            width: 100
+                        }, {
+                            field: 'remarks',
+                            title: '備考',
+                            minWidth: 160
+                        }, {
+                            field: 'cd',
+                            title: '担当者CD',
+                            event: 'setSign',
+                            width: 80
+                        }, {
+                            field: 'a',
+                            title: '作成日時',
+                            width: 100
+                        }, {
+                            field: 'author',
+                            title: '作成者',
+                            width: 100
+                        }, {
+                            field: 'uptime',
+                            title: '更新日時',
+                            minWidth: 160
+                        }, {
+                            field: 'changer',
+                            title: '更新者',
+                            event: 'setSign',
+                            width: 80
+                        }, {
+                            fixed: 'right',
+                            title: '操作',
+                            toolbar: '#barDemo',
+                            width: 150
+                        }, ]
+                    ],
+                    data: [{
+                        "id": "1",
+                        "username": "大山",
+                        "username2": "オオヤマ",
+                        "bp": "個人事業者",
+                        "adress": "東京都",
+                        "tel": "0906666777",
+                        "mail": "126222@gmail.com",
+                        "fax": "222333999",
+                        "bf": "IT",
+                        "bc": "新規作成",
+                        "remarks": "なし",
+                        "cd": "001",
+                        "a": "2020/12/04",
+                        "author": "陳",
+                        "uptime": "2020/12/04",
+                        "changer": "陳",
 
-                <td> <button class="layui-btn layui-btn-normal" id="alter">編集</button> <button class="layui-btn layui-btn-danger" id="delete">削除</button> </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>大山</td>
-                <td>オオヤマ</td>
-                <td>個人事業者</td>
-                <td>東京都</td>
-                <td>08048782265</td>
-                <td>ch668822@gmail.com</td>
-                <td>xxxx-xxxx</td>
-                <td>IT</td>
-                <td>新規作成</td>
-                <td>なし</td>
-                <td>001</td>
-                <td>2020/12/04</td>
-                <td>陳</td>
-                <td>2020/12/04</td>
-                <td>陳</td>
+                    }, {
+                        "id": "1",
+                        "username": "大山",
+                        "username2": "オオヤマ",
+                        "bp": "個人事業者",
+                        "adress": "東京都",
+                        "tel": "0906666777",
+                        "mail": "126222@gmail.com",
+                        "fax": "222333999",
+                        "bf": "IT",
+                        "bc": "新規作成",
+                        "remarks": "なし",
+                        "cd": "001",
+                        "a": "2020/12/04",
+                        "author": "陳",
+                        "uptime": "2020/12/04",
+                        "changer": "陳",
 
-                <td> <button class="layui-btn layui-btn-normal" id="alter">編集</button> <button class="layui-btn layui-btn-danger" id="delete">削除</button> </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>大山</td>
-                <td>オオヤマ</td>
-                <td>個人事業者</td>
-                <td>東京都</td>
-                <td>08048782265</td>
-                <td>ch668822@gmail.com</td>
-                <td>xxxx-xxxx</td>
-                <td>IT</td>
-                <td>新規作成</td>
-                <td>なし</td>
-                <td>001</td>
-                <td>2020/12/04</td>
-                <td>陳</td>
-                <td>2020/12/04</td>
-                <td>陳</td>
+                    }, {
+                        "id": "1",
+                        "username": "大山",
+                        "username2": "オオヤマ",
+                        "bp": "個人事業者",
+                        "adress": "東京都",
+                        "tel": "0906666777",
+                        "mail": "126222@gmail.com",
+                        "fax": "222333999",
+                        "bf": "IT",
+                        "bc": "新規作成",
+                        "remarks": "なし",
+                        "cd": "001",
+                        "a": "2020/12/04",
+                        "author": "陳",
+                        "uptime": "2020/12/04",
+                        "changer": "陳",
 
-                <td> <button class="layui-btn layui-btn-normal" id="alter">編集</button> <button class="layui-btn layui-btn-danger" id="delete">削除</button> </td>
-            </tr>
-        </table>
-    </div>
+                    }, {
+                        "id": "1",
+                        "username": "大山",
+                        "username2": "オオヤマ",
+                        "bp": "個人事業者",
+                        "adress": "東京都",
+                        "tel": "0906666777",
+                        "mail": "126222@gmail.com",
+                        "fax": "222333999",
+                        "bf": "IT",
+                        "bc": "新規作成",
+                        "remarks": "なし",
+                        "cd": "001",
+                        "a": "2020/12/04",
+                        "author": "陳",
+                        "uptime": "2020/12/04",
+                        "changer": "陳",
 
-    <center>
-        <div id="demo2" class="demo2"></div>
-    </center>
+                    }, {
+                        "id": "1",
+                        "username": "大山",
+                        "username2": "オオヤマ",
+                        "bp": "個人事業者",
+                        "adress": "東京都",
+                        "tel": "0906666777",
+                        "mail": "126222@gmail.com",
+                        "fax": "222333999",
+                        "bf": "IT",
+                        "bc": "新規作成",
+                        "remarks": "なし",
+                        "cd": "001",
+                        "a": "2020/12/04",
+                        "author": "陳",
+                        "uptime": "2020/12/04",
+                        "changer": "陳",
 
-    <script src="/static/build/layui.js"></script>
-    <script>
-        layui.use('laypage', function() {
-            var laypage = layui.laypage
+                    }],
+                    page: true,
+                    limits: [10, 30, 50, 100],
+                    response: {
+                        statusName: 'code',
+                        statusCode: 0,
+                        msgName: 'msg',
+                        countName: 'layuiCount',
+                        dataName: 'layuiData'
+                    },
+                    done: function(res, page, count) {
 
-            //执行一个laypage实例
-            laypage.render({
-                elem: 'demo2',
-                count: 100,
-                theme: '#1E9FFF',
-                prev: '<em>←</em>',
-                next: '<em>→</em>'
-
-            });
-
-        });
-    </script>
-    <script>
-        layui.use('table', function() {
-            var table = layui.table;
-
-
-            table.render({
-                elem: '#tab1',
-                width: 1500
-
-
+                    }
+                });
 
 
             });
-        });
-    </script>
+        </script>
+    </div>
+
+
+
     <script src="./lib/layui/lay/modules/jquery.js" charset="utf-8"></script>
     <script>
         layui.use('layer', function() {
@@ -312,6 +381,7 @@
 
         });
     </script>
+
 
 
 
