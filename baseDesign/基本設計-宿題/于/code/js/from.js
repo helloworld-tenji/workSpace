@@ -7,6 +7,7 @@ layui.use('table', function(){
       ,height: 330
       ,url: '/jsonData/testData.json' //データの保存先
       ,page: true 
+      ,toolbar: '#toolbarDemo'
       ,cols: [[ 
         {field: 'id', title: 'ID', width:80, sort: true, fixed: 'left'}
         ,{field: 'username', title: '取引先名', width:150}
@@ -23,8 +24,7 @@ layui.use('table', function(){
         ,{field: 'author', title: '作成者', width:80}
         ,{field: 'updateDate', title: '更新日', width:80}
         ,{field: 'changer', title: '更新者', width:80}
-        ,{field: 'operation', title: '操作', width:80}
-
+        ,{field: 'operation', title: '操作', width:120,toolbar:'#iconDemo' }
       ]]
     });
     
