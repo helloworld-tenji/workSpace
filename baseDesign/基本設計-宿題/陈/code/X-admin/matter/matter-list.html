@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html class="x-admin-sm">
+
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎页面-X-admin2.2</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="./torihikisaki.css">
+    <script src="../lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/xadmin.js"></script>
+    <!--[if lt IE 9]>
+          <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+          <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+
+    <div class="layui-layout layui-layout-admin ">
+        <div class="layui-header ">
+            <div class="layui-logo">
+                <a href="" style="font-size :30px; color:white">営業システム</a> </div>
+
+
+            <ul class="layui-nav layui-layout-right ">
+                <li class="layui-nav-item" 　>
+                    <a href="javascript:;">
+                       admin
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">設定</a></dd>
+                        <dd><a href="">ログアウト</a></dd>
+                    </dl>
+                </li>
+
+            </ul>
+        </div>
+
+
+        <div class="layui-side ">
+            <div class="layui-side-scroll">
+
+                <ul class="layui-nav layui-nav-tree " lay-filter="">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="../torihikisaki/torihikisaki-list.html">取引先照会</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="matter-list.html">案件照会</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="layui-form">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">日期</label>
+                <div class="layui-input-inline">
+                    <input type="text" class="layui-input" id="test6" placeholder=" - ">
+                </div>
+            </div>
+            <div class="search">
+
+
+                <div class="layui-inline layui-show-xs-block">
+                    <input class="layui-input" placeholder="案件名"></div>
+                <div class="layui-inline layui-show-xs-block">
+                    <input class="layui-input" placeholder="案件ステータス"></div>
+                <div class="layui-inline layui-show-xs-block">
+                    <button class="layui-btn layui-btn-normal" id="test">検索</button>
+                </div>
+            </div>
+            <div class="btn1">
+
+                <button class="layui-btn layui-btn-normal" id="cuyika">取引先追加</button>
+                <hr>
+                <div class="form-group col-sm-12" id="tab1">
+                    <table class="layui-hide" lay-filter="jqGridFilter"></table>
+
+
+                </div>
+                <script type="text/html" id="barDemo">
+                    <a class="layui-btn layui-btn-xs layui-btn-normal" lay-event="edit" id="alter">編集</a>
+                    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del" id="delete">削除</a>
+                </script>
+
+                <script src="/static/build/layui.js"></script>
+
+                <script>
+                    layui.use('table', function() {
+                        table = layui.table;
+                        table.render({
+                            elem: '#tab1',
+                            height: 400,
+
+                            totalRow: true,
+                            cols: [
+                                [{
+                                    field: 'id',
+                                    title: '案件ID ',
+                                    width: 100,
+
+                                }, {
+                                    field: 'toricd',
+                                    title: '取引先CD',
+                                    width: 120
+                                }, {
+                                    field: 'status',
+                                    title: '案件ステータス',
+                                    width: 140
+                                }, {
+                                    field: 'responsible',
+                                    title: '担当者CD',
+                                    minWidth: 150
+
+                                }, {
+                                    field: 'mattername',
+                                    title: '案件名',
+                                    minWidth: 160
+                                }, {
+                                    field: 'gayiyou',
+                                    title: '案件概要',
+                                    event: 'setSign',
+                                    width: 120
+                                }, {
+                                    field: 'skill',
+                                    title: '必要スキル',
+                                    width: 120
+                                }, {
+                                    field: 'start date',
+                                    title: '予定開始日',
+                                    minWidth: 160
+                                }, {
+                                    field: 'end date',
+                                    title: '予定終了日',
+                                    width: 100
+                                }, {
+                                    field: 'wst',
+                                    title: '勤務開始時刻',
+                                    minWidth: 120
+                                }, {
+                                    field: 'wet',
+                                    title: '勤務終了時刻',
+                                    event: 'setSign',
+                                    width: 120
+                                }, {
+                                    field: 'people',
+                                    title: '募集人数',
+                                    width: 100
+                                }, {
+                                    field: 'Working style',
+                                    title: '作業形態',
+                                    width: 100
+                                }, {
+                                    field: 'Work place',
+                                    title: '作業場所',
+                                    minWidth: 160
+                                }, {
+                                    field: 'overtime',
+                                    title: '残業見込(時間)',
+                                    event: 'setSign',
+                                    width: 130
+                                }, {
+                                    field: 'sp',
+                                    title: '精算パータン',
+
+                                    width: 150
+                                }, {
+                                    field: 'smin',
+                                    title: '精算時間MIN',
+                                    minWidth: 120
+                                }, {
+                                    field: 'smax',
+                                    title: '精算時間MAX',
+                                    event: 'setSign',
+                                    width: 120
+                                }, {
+                                    field: 'tmin',
+                                    title: '単価MIN(万円)',
+                                    width: 130
+                                }, {
+                                    field: 'tmax',
+                                    title: '単価MAX(万円)',
+                                    minWidth: 130
+                                }, {
+                                    field: 'hp',
+                                    title: '時給単価',
+                                    event: 'setSign',
+                                    width: 100
+                                }, {
+                                    field: 'mp',
+                                    title: '固定月額(万円)',
+                                    width: 130
+                                }, {
+                                    field: 'sex',
+                                    title: '性別制限',
+                                    width: 100
+                                }, {
+                                    field: 'amin',
+                                    title: '年齢MIN',
+                                    minWidth: 100
+                                }, {
+                                    field: 'amax',
+                                    title: '年齢MAX',
+                                    event: 'setSign',
+                                    width: 90
+                                }, {
+                                    field: 'fna',
+                                    title: '外国籍制限',
+                                    width: 100
+                                }, {
+                                    field: 'clothes',
+                                    title: '服装',
+                                    width: 100
+                                }, {
+                                    field: 'noi',
+                                    title: '面接回数',
+                                    minWidth: 100
+                                }, {
+                                    field: 's',
+                                    title: '同席可否',
+                                    event: 'setSign',
+                                    width: 100
+                                }, {
+                                    field: 'ir',
+                                    title: '面接備考',
+                                    event: 'setSign',
+                                    width: 100
+                                }, {
+                                    field: 'tel',
+                                    title: '連絡先Tel',
+                                    width: 140
+                                }, {
+                                    field: 'mail',
+                                    title: '連絡先Mail',
+                                    width: 140
+                                }, {
+                                    field: 'remarks',
+                                    title: '備考',
+                                    minWidth: 100
+                                }, {
+                                    field: 'atime',
+                                    title: '作成日時',
+                                    event: 'setSign',
+                                    width: 100
+                                }, {
+                                    field: 'author',
+                                    title: '作成者',
+                                    event: 'setSign',
+                                    width: 100
+                                }, {
+                                    field: 'uptime',
+                                    title: '更新日時',
+                                    minWidth: 160
+                                }, {
+                                    field: 'changer',
+                                    title: '更新者',
+                                    event: 'setSign',
+                                    width: 80
+                                }, {
+                                    fixed: 'right',
+                                    title: '操作',
+                                    toolbar: '#barDemo',
+                                    width: 150
+                                }, ]
+                            ],
+                            data: [{
+                                "id": "2",
+                                "toricd": "大山",
+                                "status": "終了",
+                                "responsible": "小島",
+                                "mattername": "xxxシステムの開発",
+                                "gayiyou": "なし",
+                                "skill": "java",
+                                "start date": "2020/1/4",
+                                "end date": "2020/8/4",
+                                "wst": "9:00",
+                                "wet": "18:00",
+                                "people": "30",
+                                "Working style": "正社員",
+                                "Work place": "大阪",
+                                "overtime": "40",
+                                "sp": "領収書",
+                                "smin": "140",
+                                "smax": "220",
+                                "tmin": "25",
+                                "tmax": "60",
+                                "hp": "1600",
+                                "mp": "35",
+                                "sex": "なし",
+                                "amin": "20",
+                                "amax": "70",
+                                "fna": "なし",
+                                "clothes": "スーツ",
+                                "noi": "2",
+                                "s": "○",
+                                "ir": "なし",
+                                "tel": "08088889999",
+                                "mail": "kgfff@126.com",
+                                "remarks": "なし",
+                                "atime": "2018/2/6",
+                                "author": "陳",
+                                "uptime": "2019/7/16",
+                                "changer": "陳",
+
+
+                            }, {
+                                "id": "2",
+                                "toricd": "大山",
+                                "status": "終了",
+                                "responsible": "小島",
+                                "mattername": "xxxシステムの開発",
+                                "gayiyou": "なし",
+                                "skill": "java",
+                                "start date": "2020/1/4",
+                                "end date": "2020/8/4",
+                                "wst": "9:00",
+                                "wet": "18:00",
+                                "people": "30",
+                                "Working style": "正社員",
+                                "Work place": "大阪",
+                                "overtime": "40",
+                                "sp": "領収書",
+                                "smin": "140",
+                                "smax": "220",
+                                "tmin": "25",
+                                "tmax": "60",
+                                "hp": "1600",
+                                "mp": "35",
+                                "sex": "なし",
+                                "amin": "20",
+                                "amax": "70",
+                                "fna": "なし",
+                                "clothes": "スーツ",
+                                "noi": "2",
+                                "s": "○",
+                                "ir": "なし",
+                                "tel": "08088889999",
+                                "mail": "kgfff@126.com",
+                                "remarks": "なし",
+                                "atime": "2018/2/6",
+                                "author": "陳",
+                                "uptime": "2019/7/16",
+                                "changer": "陳",
+
+
+                            }, {
+                                "id": "2",
+                                "toricd": "大山",
+                                "status": "終了",
+                                "responsible": "小島",
+                                "mattername": "xxxシステムの開発",
+                                "gayiyou": "なし",
+                                "skill": "java",
+                                "start date": "2020/1/4",
+                                "end date": "2020/8/4",
+                                "wst": "9:00",
+                                "wet": "18:00",
+                                "people": "30",
+                                "Working style": "正社員",
+                                "Work place": "大阪",
+                                "overtime": "40",
+                                "sp": "領収書",
+                                "smin": "140",
+                                "smax": "220",
+                                "tmin": "25",
+                                "tmax": "60",
+                                "hp": "1600",
+                                "mp": "35",
+                                "sex": "なし",
+                                "amin": "20",
+                                "amax": "70",
+                                "fna": "なし",
+                                "clothes": "スーツ",
+                                "noi": "2",
+                                "s": "○",
+                                "ir": "なし",
+                                "tel": "08088889999",
+                                "mail": "kgfff@126.com",
+                                "remarks": "なし",
+                                "atime": "2018/2/6",
+                                "author": "陳",
+                                "uptime": "2019/7/16",
+                                "changer": "陳",
+
+
+                            }, {
+                                "id": "2",
+                                "toricd": "大山",
+                                "status": "終了",
+                                "responsible": "小島",
+                                "mattername": "xxxシステムの開発",
+                                "gayiyou": "なし",
+                                "skill": "java",
+                                "start date": "2020/1/4",
+                                "end date": "2020/8/4",
+                                "wst": "9:00",
+                                "wet": "18:00",
+                                "people": "30",
+                                "Working style": "正社員",
+                                "Work place": "大阪",
+                                "overtime": "40",
+                                "sp": "領収書",
+                                "smin": "140",
+                                "smax": "220",
+                                "tmin": "25",
+                                "tmax": "60",
+                                "hp": "1600",
+                                "mp": "35",
+                                "sex": "なし",
+                                "amin": "20",
+                                "amax": "70",
+                                "fna": "なし",
+                                "clothes": "スーツ",
+                                "noi": "2",
+                                "s": "○",
+                                "ir": "なし",
+                                "tel": "08088889999",
+                                "mail": "kgfff@126.com",
+                                "remarks": "なし",
+                                "atime": "2018/2/6",
+                                "author": "陳",
+                                "uptime": "2019/7/16",
+                                "changer": "陳",
+
+                            }, {
+                                "id": "2",
+                                "toricd": "大山",
+                                "status": "終了",
+                                "responsible": "小島",
+                                "mattername": "xxxシステムの開発",
+                                "gayiyou": "なし",
+                                "skill": "java",
+                                "start date": "2020/1/4",
+                                "end date": "2020/8/4",
+                                "wst": "9:00",
+                                "wet": "18:00",
+                                "people": "30",
+                                "Working style": "正社員",
+                                "Work place": "大阪",
+                                "overtime": "40",
+                                "sp": "領収書",
+                                "smin": "140",
+                                "smax": "220",
+                                "tmin": "25",
+                                "tmax": "60",
+                                "hp": "1600",
+                                "mp": "35",
+                                "sex": "なし",
+                                "amin": "20",
+                                "amax": "70",
+                                "fna": "なし",
+                                "clothes": "スーツ",
+                                "noi": "2",
+                                "s": "○",
+                                "ir": "なし",
+                                "tel": "08088889999",
+                                "mail": "kgfff@126.com",
+                                "remarks": "なし",
+                                "atime": "2018/2/6",
+                                "author": "陳",
+                                "uptime": "2019/7/16",
+                                "changer": "陳",
+
+
+                            }],
+                            page: true,
+                            limits: [10, 30, 50, 100],
+                            response: {
+                                statusName: 'code',
+                                statusCode: 0,
+                                msgName: 'msg',
+                                countName: 'layuiCount',
+                                dataName: 'layuiData'
+                            },
+                            done: function(res, page, count) {
+
+                            }
+                        });
+
+
+                    });
+                </script>
+            </div>
+
+
+
+            <script src="./lib/layui/lay/modules/jquery.js" charset="utf-8"></script>
+            <script>
+                layui.use('layer', function() {
+                    var $ = layui.jquery,
+                        layer = layui.layer;
+                    $(document).on('click', "#alter", function() {
+                        layer.open({
+                            type: 2,
+                            content: 'matter-edit.html',
+                            area: ['500px', '500px']
+                        });
+
+                    });
+                    $(document).on('click', "#cuyika", function() {
+                        layer.open({
+                            type: 2,
+                            content: 'matter-add.html',
+                            area: ['500px', '500px']
+                        });
+
+                    });
+
+                });
+            </script>
+            <script>
+                layui.use('layer', function() {
+                    var $ = layui.jquery,
+                        layer = layui.layer;
+                    $(document).on('click', "#delete", function() {
+                        layer.msg('削除しますか', {
+
+                            btn: ['削除', '取消', ]
+                        });
+                    });
+
+                });
+            </script>
+            <script>
+                layui.use('laydate', function() {
+                    var laydate = layui.laydate;
+
+                    //日期范围
+                    laydate.render({
+                        elem: '#test6',
+                        range: true
+                    });
+                });
+            </script>
+
+
+
+
+</body>
+
+
+</html>
