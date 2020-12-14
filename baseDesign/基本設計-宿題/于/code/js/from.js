@@ -5,7 +5,7 @@ layui.use('table', function(){
     table.render({
       elem: '#record'
       ,height: 330
-      ,url: '/jsonData/testData.json' //データの保存先
+      ,url: './jsonData/testData.json' //データの保存先
       ,page: true 
       ,toolbar: '#toolbarDemo'
       ,cols: [[ 
