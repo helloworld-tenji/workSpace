@@ -377,6 +377,7 @@ body {
 .page-content .layui-tab-content .layui-tab-item iframe {
     width: 100%;
     height: 100%;
+    scroll-behavior: auto;
 }
 
 .x-admin-carousel,
@@ -594,6 +595,19 @@ table td {
     height: 30px;
     line-height: 30px;
     padding: 0 10px;
+}
+
+.layui-tab-title .layui-this {
+    border-bottom: 4px solid #189f92;
+}
+
+.anken-add hr.hr15 {
+    /* height: 15px; */
+    height: 25px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
 }
 
 .x-admin-sm .layui-btn-lg {
