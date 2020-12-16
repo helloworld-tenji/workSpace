@@ -16,16 +16,18 @@ layui.use('laydate', function(){
     table.render({
       elem: '#customer-records'
       ,height: 330
-      ,url: '../jsonData/testData.json' //データの保存先
-      ,page: true 
+      ,url: '../jsonData/clientData.json' //データの保存先
       ,toolbar: '#toolbarDemo'
       ,cols: [[
-          {title: '第１四半期', align: 'center', colspan: 5 }
+          {title: '第１四半期', align: 'center', colspan: 7 }
       ],
-        [ {field: 'id', title: '月', width:80, sort: true, fixed: 'left'}
-        ,{field: 'username', title: '現状', width:200}
-        ,{field: 'customerNameKana', title: '目標', width:270,height:20, sort: true}
-        ,{field: 'operation', title: '実施', width:200,toolbar:'#iconDemo' }
+        [ {field: 'Moon', title: '月', width:50,  fixed: 'left'}
+        ,{field: 'currentStatus', title: '現状', width:200}
+        ,{field: 'goal', title: '目標', width:270,height:20, sort: true}
+        ,{field: 'implementation', title: '実施', width:200,}
+        ,{field: 'implementationResults', title: '実施結果', width:200,}
+        ,{field: 'improvement', title: '改善点', width:200,}
+        ,{field: 'operation', title: '操作', width:120,toolbar:'#iconDemo' }
       ]]
     });
     
