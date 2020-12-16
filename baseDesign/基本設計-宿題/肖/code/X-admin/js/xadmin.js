@@ -96,7 +96,7 @@
             shadeClose: true,
             shade: 0.4,
             title: title,
-            content: url
+            content: url,
         });
         if (full) {
             layer.full(index);
