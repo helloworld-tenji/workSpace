@@ -1,5 +1,6 @@
 layui.use('table', function(){
     let table = layui.table;
+    let form = layui.form;
     
     
     table.render({
@@ -29,3 +30,20 @@ layui.use('table', function(){
     });
     
   });
+
+  // list削除
+  function list_del(obj,id) {
+    layer.confirm('削除してもよろしいですか？', {
+      icon: 3,
+      title: 'メッセージ',
+      btn: ['確認', '取消']
+  }, function(index) {
+      //发异步删除数据
+      $(obj).parents("tr").remove();
+      layer.msg('削除しました!', {
+          icon: 1,
+          time: 1000
+      });
+  });
+  }
+

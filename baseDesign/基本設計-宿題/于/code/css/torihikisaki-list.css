@@ -41,3 +41,7 @@
 
 
 }
+
+#toolbarDemo div {
+    float: left;
+}
