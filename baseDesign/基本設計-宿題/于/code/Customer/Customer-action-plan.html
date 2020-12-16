@@ -20,10 +20,10 @@
         <input type="text" id="year"　placeholder="年度" onfocus="this.blur();">
 
         <select>
-            <option value ="BP">第１四半期</option>
-            <option value ="個人事業者">第２四半期</option>
-            <option value="企業">第３四半期</option>
-            <option value="その他">第４四半期</option>
+            <option value ="1">第１四半期</option>
+            <option value ="2">第２四半期</option>
+            <option value="3">第３四半期</option>
+            <option value="4">第４四半期</option>
           </select>
         <input type="button" class="layui-btn"  value="確認">
     </div>
@@ -35,6 +35,11 @@
         <table id="customer-records"></table>
     </div>
 </body>
+ <!-- リストコントロールボタン -->
+<script type="text/html" id="toolbarDemo">
+    <div class="layui-btn-container"></div>
+  </script>
+
 <script type="text/html" id="iconDemo">
     <a class="layui-btn layui-btn-xs" onclick="xadmin.open('行動計画','./torihikisaki-add.html',600,400)" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" onclick="list_del(this,'idを削除します')" lay-event="del">删除</a>
