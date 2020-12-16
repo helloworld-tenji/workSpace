@@ -20,29 +20,33 @@
 <body>
 
     <div class="layui-layout layui-layout-admin ">
-        <div class="layui-header ">
-            <div class="layui-logo">
-                <a href="" style="font-size :30px; color:white">営業システム</a> </div>
+        <ul class="layui-nav layui-bg-green" lay-filter="">
+            <li class="layui-nav-item"><a href="" style="font-size: 30px;">営業システム</a></li>
 
+            <li class="layui-nav-item layui-col-md-offset9 ">
+                <a href="javascript:;">admin</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">設定</a></dd>
+                    <dd><a href="../login.html">レイアウト</a></dd>
 
-            <ul class="layui-nav layui-layout-right ">
-                <li class="layui-nav-item" 　>
-                    <a href="javascript:;">
-                       admin
-                    </a>
-                    <dl class="layui-nav-child">
-                        <dd><a href="">設定</a></dd>
-                        <dd><a href="">ログアウト</a></dd>
-                    </dl>
-                </li>
+                </dl>
+            </li>
+        </ul>
 
-            </ul>
-        </div>
+        <script>
+            layui.use('element', function() {
+                var element = layui.element;
 
-        <div class="layui-side ">
+                //…
+            });
+        </script>
+    </div>
+
+    <div class="layui-side ">
+        <div class="layui-side layui-bg-black">
             <div class="layui-side-scroll">
-
-                <ul class="layui-nav layui-nav-tree " lay-filter="">
+                <div title="菜单缩放" class="kit-side-fold"><i class="fa fa-navicon" aria-hidden="true"></i></div>
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
                     <li class="layui-nav-item layui-nav-itemed">
                         <dd class="">
                             <a href="torihikisaki-list.html">取引先照会</a>
@@ -114,9 +118,14 @@
                         </dd>
                     </li>
 
+                </ul>
             </div>
 
+
+
         </div>
+
+    </div>
 
 
     </div>
@@ -127,12 +136,12 @@
         <div class="layui-inline layui-show-xs-block">
             <input class="layui-input" placeholder="ＢＤ区分"></div>
         <div class="layui-inline layui-show-xs-block">
-            <button class="layui-btn layui-btn-normal" id="test">検索</button>
+            <button class="layui-btn " id="test">検索</button>
         </div>
     </div>
     <div class="btn1">
 
-        <button class="layui-btn layui-btn-normal" id="cuyika">取引先追加</button>
+        <button class="layui-btn " id="cuyika">取引先追加</button>
         <hr>
         <div class="form-group col-sm-12" id="tab1">
             <table class="layui-hide" lay-filter="jqGridFilter"></table>
@@ -140,7 +149,7 @@
 
         </div>
         <script type="text/html" id="barDemo">
-            <a class="layui-btn layui-btn-xs layui-btn-normal" lay-event="edit" id="alter">編集</a>
+            <a class="layui-btn layui-btn-xs" lay-event="edit" id="alter">編集</a>
             <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del" id="delete">削除</a>
         </script>
 

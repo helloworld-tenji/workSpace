@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    background-image: url("../images/login2.jpg");
+    background-image: url("../images/login3.jpg");
     /* 让背景图基于容器大小伸缩 */
     background-size: 100%;
     background-attachment: fixed;
@@ -30,4 +30,3 @@ body {
 input[type=text] {
     font-size: 30px;
 }
-
