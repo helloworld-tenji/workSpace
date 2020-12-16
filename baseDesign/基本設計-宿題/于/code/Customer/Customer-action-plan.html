@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/layui/css/layui.css">
+    <link rel="stylesheet" href="../css/torihikisaki-list.css">
+    <script src="../lib/layui/layui.js"></script>
+    <script src="../js/Customer.js"></script>
+    <script src="../js/xadmin.js"></script>
+    <title>顧客行動リスト</title>
+</head>
+<body>
+    <div class="lookup">
+        <h2>顧客行動計</h2>
+        <input type="text" placeholder="取引先CD">
+        <input type="text" placeholder="名前">
+        <input type="text" placeholder="担当者">
+        <input type="text" id="year"　placeholder="年度" onfocus="this.blur();">
+
+        <select>
+            <option value ="BP">第１四半期</option>
+            <option value ="個人事業者">第２四半期</option>
+            <option value="企業">第３四半期</option>
+            <option value="その他">第４四半期</option>
+          </select>
+        <input type="button" class="layui-btn"  value="確認">
+    </div>
+    
+    <div class="lookup-lower">
+        <!-- 行動計画登録ボタン -->
+        <button class="layui-btn" onclick="xadmin.open('行動計画登録','./torihikisaki-add.html',600,400)"><i class="layui-icon"></i>取引先追加</button>
+        <!-- 行動計画List -->
+        <table id="customer-records"></table>
+
+    </div>
+</body>
+
+
+
+</html>
