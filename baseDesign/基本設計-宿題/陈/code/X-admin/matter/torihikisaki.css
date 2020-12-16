@@ -33,13 +33,12 @@
                                 margin-left: 210px;
                             }
                             
-                            .layui-form-label {
+                            .layui-form {
                                 margin-top: 10px;
-                                margin-left: 140px;
                             }
                             
-                            .layui-input-inline {
-                                margin-top: 10px;
+                            .layui-form-label {
+                                margin-left: 140px;
                             }
                             
                             .layui-side {
