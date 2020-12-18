@@ -1,123 +1,134 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="x-admin-sm">
 
 <head>
     <meta charset="UTF-8">
-    <title>営業フローシステム</title>
-    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <title>欢迎页面-X-admin2.2</title>
+    <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="stylesheet" href="../css/font.css">
-    <link rel="stylesheet" href="./lib/layui/css/layui.css">
-
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./torihikisaki/torihikisaki.css">
+    <script src="./lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./js/xadmin.js"></script>
+    <!--[if lt IE 9]>
+          <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+          <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 </head>
 
 <body>
 
     <div class="layui-layout layui-layout-admin ">
-        <div class="layui-header ">
-            <div class="layui-logo">
-                <a href="" style="font-size :30px; color:white">営業システム</a> </div>
+        <ul class="layui-nav layui-bg-green" lay-filter="">
+            <li class="layui-nav-item"><a href="" style="font-size: 30px;">営業システム</a></li>
 
+            <li class="layui-nav-item layui-col-md-offset9 ">
+                <a href="javascript:;">admin</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">設定</a></dd>
+                    <dd><a href="./login.html">レイアウト</a></dd>
 
-            <ul class="layui-nav layui-layout-right ">
-                <li class="layui-nav-item" 　>
-                    <a href="javascript:;">
-                       admin
-                    </a>
-                    <dl class="layui-nav-child">
-                        <dd><a href="">設定</a></dd>
-                        <dd><a href="">ログアウト</a></dd>
-                    </dl>
-                </li>
+                </dl>
+            </li>
+        </ul>
 
-            </ul>
-        </div>
+        <script>
+            layui.use('element', function() {
+                var element = layui.element;
 
-        <div class="layui-side ">
+                //…
+            });
+        </script>
+    </div>
+
+    <div class="layui-side ">
+        <div class="layui-side layui-bg-black">
             <div class="layui-side-scroll">
+                <div title="菜单缩放" class="kit-side-fold"><i class="fa fa-navicon" aria-hidden="true"></i></div>
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="./torihikisaki/torihikisaki-list.html">取引先照会</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="./matter/matter-list.html">案件照会</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="./plan/plan-list.html">顧客行動計画管理</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
 
-                <ul class="layui-nav layui-nav-tree " lay-filter="">
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <dd class="">
-                            <a href="torihikisaki/torihikisaki-list.html">取引先照会</a>
-                        </dd>
-                    </li>
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <dd class="">
-                            <a href="../matter/matter-list.html">案件照会</a>
-                        </dd>
-                    </li>
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <dd class="">
-                            <a href="">test</a>
-                        </dd>
-                    </li>
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <dd class="">
-                            <a href="">test</a>
-                        </dd>
-                    </li>
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <dd class="">
-                            <a href="">test</a>
-                        </dd>
-                    </li>
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <dd class="">
-                            <a href="">test</a>
-                        </dd>
-                    </li>
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <dd class="">
-                            <a href="">test</a>
-                        </dd>
-                    </li>
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <dd class="">
-                            <a href="">test</a>
-                        </dd>
-                    </li>
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <dd class="">
-                            <a href="">test</a>
-                        </dd>
-                    </li>
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <dd class="">
-                            <a href="">test</a>
-                        </dd>
-                    </li>
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <dd class="">
-                            <a href="">test</a>
-                        </dd>
-                    </li>
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <dd class="">
-                            <a href="">test</a>
-                        </dd>
-                    </li>
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <dd class="">
-                            <a href="">test</a>
-                        </dd>
-                    </li>
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <dd class="">
-                            <a href="">test</a>
-                        </dd>
-                    </li>
-
+                </ul>
             </div>
 
-        </div>
 
+
+        </div>
 
     </div>
 
 
+    </div>
 
 
 
