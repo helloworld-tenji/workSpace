@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html class="x-admin-sm">
+
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎页面-X-admin2.2</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../matter/torihikisaki.css">
+    <script src="../lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/xadmin.js"></script>
+    <!--[if lt IE 9]>
+          <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+          <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+
+    <div class="layui-layout layui-layout-admin ">
+        <ul class="layui-nav layui-bg-green" lay-filter="">
+            <li class="layui-nav-item"><a href="" style="font-size: 30px;">営業システム</a></li>
+
+            <li class="layui-nav-item layui-col-md-offset9 ">
+                <a href="javascript:;">admin</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">設定</a></dd>
+                    <dd><a href="../login.html">レイアウト</a></dd>
+
+                </dl>
+            </li>
+        </ul>
+
+        <script>
+            layui.use('element', function() {
+                var element = layui.element;
+
+                //…
+            });
+        </script>
+    </div>
+
+    <div class="layui-side ">
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <div title="菜单缩放" class="kit-side-fold"><i class="fa fa-navicon" aria-hidden="true"></i></div>
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="../torihikisaki/torihikisaki-list.html">取引先照会</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="../matter/matter-list.html">案件照会</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="">顧客行動計画管理</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    </div>
+    <div class="layui-form">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">日期</label>
+                <div class="layui-input-inline">
+                    <input type="text" class="layui-input" id="test6" placeholder=" - ">
+                </div>
+                <div class="layui-inline layui-show-xs-block">
+                    <input class="layui-input" placeholder="取引先名"></div>
+                <div class="layui-inline layui-show-xs-block">
+                    <input class="layui-input" placeholder="現状"></div>
+                <div class="layui-inline layui-show-xs-block">
+                    <button class="layui-btn" id="test">検索</button>
+                </div>
+            </div>
+            <div class="btn1">
+
+                <button class="layui-btn " id="cuyika">顧客行動計画追加</button>
+                <hr>
+                <div class="form-group col-sm-12" id="tab1">
+                    <table class="layui-hide" lay-filter="jqGridFilter"></table>
+
+
+                </div>
+                <script type="text/html" id="barDemo">
+                    <a class="layui-btn layui-btn-xs" lay-event="edit" id="alter">編集</a>
+                    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del" id="delete">削除</a>
+                </script>
+
+                <script src="/static/build/layui.js"></script>
+
+                <script>
+                    layui.use('table', function() {
+                        table = layui.table;
+                        table.render({
+                            elem: '#tab1',
+                            height: 500,
+                            cols: [
+                                [{
+                                        field: 'id',
+                                        title: 'ID',
+                                        width: 50,
+                                        rowspan: 2
+                                    }, {
+                                        field: 'username',
+                                        title: '取引先名',
+                                        width: 120,
+                                        rowspan: 2
+                                    }, {
+                                        field: 'cs',
+                                        title: '現状',
+                                        width: 180,
+                                        rowspan: 2
+                                    }, {
+                                        field: 'goal',
+                                        title: '目標',
+                                        width: 180,
+                                        rowspan: 2
+                                    }, {
+                                        align: 'plan',
+                                        title: '実施計画',
+                                        colspan: 3
+                                    }, {
+                                        field: 'kg1',
+                                        title: '第一期実施結果及び改善点',
+                                        width: 220,
+                                        rowspan: 2
+                                    }, {
+                                        align: 'plan',
+                                        title: '実施計画',
+                                        colspan: 3
+                                    }, {
+                                        field: 'kg2',
+                                        title: '第二期実施結果及び改善点',
+                                        width: 220,
+                                        rowspan: 2
+                                    }, {
+                                        align: 'plan',
+                                        title: '実施計画',
+                                        colspan: 3
+                                    }, {
+                                        field: 'kg3',
+                                        title: '第三期実施結果及び改善点',
+                                        width: 220,
+                                        rowspan: 2
+                                    }, {
+                                        align: 'plan',
+                                        title: '実施計画',
+                                        colspan: 3
+                                    }, {
+                                        field: 'kg4',
+                                        title: '第四期実施結果及び改善点',
+                                        width: 220,
+                                        rowspan: 2
+                                    }, {
+                                        field: 'bk',
+                                        title: '備考',
+                                        width: 130,
+                                        rowspan: 2
+                                    }, {
+                                        field: 'a',
+                                        title: '作成日時',
+                                        width: 100,
+                                        rowspan: 2
+                                    }, {
+                                        field: 'author',
+                                        title: '作成者',
+                                        width: 100,
+                                        rowspan: 2
+                                    }, {
+                                        field: 'uptime',
+                                        title: '更新日時',
+                                        minWidth: 160,
+                                        rowspan: 2
+                                    }, {
+                                        field: 'changer',
+                                        title: '更新者',
+                                        event: 'setSign',
+                                        width: 80,
+                                        rowspan: 2
+                                    }, {
+                                        fixed: 'right',
+                                        title: '操作',
+                                        toolbar: '#barDemo',
+                                        width: 150,
+                                        rowspan: 2
+                                    },
+
+                                ],
+
+
+                                [{
+                                    field: '1m',
+                                    title: '1月',
+                                    width: 170
+                                }, {
+                                    field: '2m',
+                                    title: '2月',
+                                    width: 170
+                                }, {
+                                    field: '3m',
+                                    title: '3月',
+                                    width: 170
+                                }, {
+                                    field: '4m',
+                                    title: '4月',
+                                    width: 170
+                                }, {
+                                    field: '5m',
+                                    title: '5月',
+                                    width: 170
+                                }, {
+                                    field: '6m',
+                                    title: '6月',
+                                    width: 170
+                                }, {
+                                    field: '7m',
+                                    title: '7月',
+                                    width: 170
+                                }, {
+                                    field: '8m',
+                                    title: '8月',
+                                    width: 170
+                                }, {
+                                    field: '9m',
+                                    title: '9月',
+                                    width: 170
+                                }, {
+                                    field: '10m',
+                                    title: '10月',
+                                    width: 170
+                                }, {
+                                    field: '11m',
+                                    title: '11月',
+                                    width: 170
+                                }, {
+                                    field: '12m',
+                                    title: '12月',
+                                    width: 170
+                                }],
+
+
+                            ],
+                            data: [{
+                                "id": "1",
+                                "username": "大山",
+                                "cs": "すでに契約しました",
+                                "goal": "新しい契約",
+                                "1m": "なし",
+                                "2m": "なし",
+                                "3m": "商談",
+                                "4m": "商談",
+                                "5m": "商談",
+                                "6m": "商談",
+                                "7m": "なし",
+                                "8m": "なし",
+                                "9m": "なし",
+                                "10m": "商談",
+                                "11m": "商談",
+                                "12m": "なし",
+                                "kg1": "商談からの契約率を高める",
+                                "kg2": "リードからの商談創出率を高める",
+                                "kg3": "なし",
+                                "kg4": "なし",
+                                "bk": "なし",
+                                "a": "2020/12/04",
+                                "author": "陳",
+                                "uptime": "2020/12/04",
+                                "changer": "陳",
+
+                            }, {
+                                "id": "1",
+                                "username": "大山",
+                                "cs": "すでに契約しました",
+                                "goal": "新しい契約",
+                                "1m": "なし",
+                                "2m": "なし",
+                                "3m": "商談",
+                                "4m": "商談",
+                                "5m": "商談",
+                                "6m": "商談",
+                                "7m": "なし",
+                                "8m": "なし",
+                                "9m": "なし",
+                                "10m": "商談",
+                                "11m": "商談",
+                                "12m": "なし",
+                                "kg1": "商談からの契約率を高める",
+                                "kg2": "リードからの商談創出率を高める",
+                                "kg3": "なし",
+                                "kg4": "なし",
+                                "bk": "なし",
+                                "a": "2020/12/04",
+                                "author": "陳",
+                                "uptime": "2020/12/04",
+                                "changer": "陳",
+
+                            }],
+                            page: true,
+                            limits: [10, 30, 50, 100],
+                            response: {
+                                statusName: 'code',
+                                statusCode: 0,
+                                msgName: 'msg',
+                                countName: 'layuiCount',
+                                dataName: 'layuiData'
+                            },
+                            done: function(res, page, count) {
+
+                            }
+                        });
+
+
+                    });
+                </script>
+            </div>
+
+
+
+            <script src="./lib/layui/lay/modules/jquery.js" charset="utf-8"></script>
+            <script>
+                layui.use('layer', function() {
+                    var $ = layui.jquery,
+                        layer = layui.layer;
+                    $(document).on('click', "#alter", function() {
+                        layer.open({
+                            type: 2,
+                            content: 'plan-edit.html',
+                            area: ['500px', '500px']
+                        });
+
+                    });
+                    $(document).on('click', "#cuyika", function() {
+                        layer.open({
+                            type: 2,
+                            content: 'plan-add.html',
+                            area: ['500px', '500px']
+                        });
+
+                    });
+
+                });
+            </script>
+            <script>
+                layui.use('layer', function() {
+                    var $ = layui.jquery,
+                        layer = layui.layer;
+                    $(document).on('click', "#delete", function() {
+                        layer.msg('削除しますか', {
+
+                            btn: ['削除', '取消', ]
+                        });
+                    });
+
+                });
+            </script>
+            <script>
+                layui.use('laydate', function() {
+                    var laydate = layui.laydate;
+
+                    //日期范围
+                    laydate.render({
+                        elem: '#test6',
+                        range: true
+                    });
+                });
+            </script>
+
+
+
+</body>
+
+
+</html>

@@ -44,3 +44,7 @@
                             .layui-side {
                                 margin-top: 60px;
                             }
+                            
+                            .layui-table th {
+                                text-align: center;
+                            }
