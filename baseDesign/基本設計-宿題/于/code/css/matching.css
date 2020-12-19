@@ -1,0 +1,33 @@
+.lower {
+    position: absolute;
+    left: 1%;
+    bottom: 0;
+    top: 25%;
+}
+
+.lookup-personnel input[type="text"] {
+    width: 120px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.lookup-personnel input[type="button"] {
+    width: 120px;
+    height: 25px;
+    line-height: 25px;
+    float: right 10px;
+    /* vertical-align: middle; */
+
+}
+
+.lookup-personnel select {
+    width: 125px;
+    height: 25px;
+    line-height: 25px;
+    float: right 10px;
+    vertical-align: middle;
+}
+
+.lookup-personnel h2 {
+    font-family: 'Droid Serif', serif;
+}
