@@ -31,3 +31,7 @@
 .lookup-personnel h2 {
     font-family: 'Droid Serif', serif;
 }
+
+.div-inline {
+    display: inline-block;
+}
