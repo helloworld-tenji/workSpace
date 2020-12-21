@@ -64,7 +64,7 @@
                     </li>
                     <li class="layui-nav-item layui-nav-itemed">
                         <dd class="">
-                            <a href="torihikisaki-list.html">test</a>
+                            <a href="../match/match.html">マッチング</a>
                         </dd>
                     </li>
                     <li class="layui-nav-item layui-nav-itemed">
@@ -138,7 +138,7 @@
                 </div>
                 <div class="layui-input-inline layui-show-xs-block">
                     <select name="contrller">
-                          
+                        <option value ="1">全て四半期</option>
                                 <option value ="1">第１四半期</option>
                                  <option value ="2">第２四半期</option>
                                     <option value="3">第３四半期</option>
@@ -158,7 +158,7 @@
 
                 <button class="layui-btn " id="cuyika">顧客行動計画追加</button>
                 <hr>
-                <div class="form-group col-sm-12" id="tab1">
+                <div class="form-group col-sm-12" id="tab2">
                     <table class="layui-hide" lay-filter="jqGridFilter"></table>
 
 
@@ -174,7 +174,7 @@
                     layui.use('table', function() {
                         table = layui.table;
                         table.render({
-                            elem: '#tab1',
+                            elem: '#tab2',
                             height: 500,
                             cols: [
                                 [{
