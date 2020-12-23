@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html class="x-admin-sm">
+
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎页面-X-admin2.2</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="./match.css">
+    <script src="../lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/xadmin.js"></script>
+    <!--[if lt IE 9]>
+          <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+          <script src="https://cdn.staticfile.org/respon.d.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+
+    <div class="layui-layout layui-layout-admin ">
+        <ul class="layui-nav layui-bg-green" lay-filter="">
+            <li class="layui-nav-item"><a href="" style="font-size: 30px;">営業システム</a></li>
+
+            <li class="layui-nav-item layui-col-md-offset9 ">
+                <a href="javascript:;">admin</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">設定</a></dd>
+                    <dd><a href="../login.html">レイアウト</a></dd>
+
+                </dl>
+            </li>
+        </ul>
+
+        <script>
+            layui.use('element', function() {
+                var element = layui.element;
+
+                //…
+            });
+        </script>
+    </div>
+
+    <div class="layui-side ">
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <div title="菜单缩放" class="kit-side-fold"><i class="fa fa-navicon" aria-hidden="true"></i></div>
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="../torihikisaki/torihikisaki-list.html">取引先照会</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="../matter/matter-list.html">案件照会</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="../plan/plan-list.html">顧客行動計画管理</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="match.html">マッチング</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <dd class="">
+                            <a href="torihikisaki-list.html">test</a>
+                        </dd>
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    </div>
+    <div class="search">
+        <h2>案件条件</h2>
+        <div class="layui-inline layui-show-xs-block">
+
+            <input class="layui-input" placeholder="必要なスキル"></div>
+        <div class="layui-inline layui-show-xs-block">
+            <input class="layui-input" placeholder="場所"></div>
+        <div class="layui-inline layui-show-xs-block">
+            <input class="layui-input" placeholder="国籍"></div>
+        <div class="layui-inline layui-show-xs-block">
+            <input class="layui-input" placeholder="日本語"></div>
+        <div class="layui-inline layui-show-xs-block">
+            <input class="layui-input" placeholder="年齢制限"></div>
+        <div class="layui-inline layui-show-xs-block">
+            <button class="layui-btn " id="test1">検索</button>
+        </div>
+    </div>
+    <div class="search2">
+        <h2>要員条件</h2>
+        <div class="layui-inline layui-show-xs-block">
+
+            <input class="layui-input" placeholder="スキル"></div>
+        <div class="layui-inline layui-show-xs-block">
+            <input class="layui-input" placeholder="国籍"></div>
+        <div class="layui-inline layui-show-xs-block">
+            <input class="layui-input" placeholder="性別"></div>
+        <div class="layui-inline layui-show-xs-block">
+            <input class="layui-input" placeholder="年齢"></div>
+
+        <div class="layui-inline layui-show-xs-block">
+            <button class="layui-btn " id="test2">検索</button>
+        </div>
+    </div>
+    <div class="btn1">
+        <div class="form-group col-sm-12" id="tab1">
+            <center>
+                <h2>案件</h2>
+            </center>
+            <table class="layui-hide" lay-filter="jqGridFilter"></table>
+
+
+        </div>
+    </div>
+
+    <div class="btn2">
+        <div class="form-group col-sm-12" id="tab2">
+            <center>
+                <h2>要員</h2>
+            </center>
+            <table class="layui-hide" lay-filter="jqGridFilter"></table>
+
+
+        </div>
+    </div>
+    <center>
+        <div class="layui-inline layui-show-xs-block">
+            <button class="layui-btn " id="c3">マッチング</button>
+        </div>
+    </center>
+    <script type="text/html" id="barDemo">
+        <a class="layui-btn layui-btn-xs" lay-event="edit" id="c1">詳細</a>
+
+    </script>
+    <script type="text/html" id="barDemo2">
+        <a class="layui-btn layui-btn-xs" lay-event="edit" id="c2">詳細</a>
+
+    </script>
+
+    <script src="/static/build/layui.js"></script>
+
+    <script src="/static/build/layui.js"></script>
+
+    <script>
+        layui.use('table', function() {
+            table = layui.table;
+            table.render({
+                elem: '#tab1',
+                height: 300,
+
+                totalRow: true,
+                cols: [
+                    [{
+                        field: 'id',
+                        title: '案件ID ',
+                        width: 120,
+
+                    }, {
+                        field: 'toricd',
+                        title: '取引先名',
+                        width: 170
+                    }, {
+                        field: 'mattername',
+                        title: '案件名',
+                        minWidth: 160
+                    }, ]
+                ],
+                data: [{
+
+                }],
+                page: true,
+                limits: [10, 30, 50, 100],
+                response: {
+                    statusName: 'code',
+                    statusCode: 0,
+                    msgName: 'msg',
+                    countName: 'layuiCount',
+                    dataName: 'layuiData'
+                },
+                done: function(res, page, count) {
+
+                }
+            });
+
+
+        });
+    </script>
+    <script>
+        layui.use('table', function() {
+            table = layui.table;
+            table.render({
+                elem: '#tab2',
+                height: 300,
+
+                totalRow: true,
+                cols: [
+
+                    [, {
+                        field: 'id',
+                        title: '社員ID ',
+                        width: 120,
+
+
+                    }, {
+                        field: 'toricd',
+                        title: '社員名',
+                        width: 170
+                    }, {
+                        field: 'mattername',
+                        title: '仕事状態    ',
+                        minWidth: 160
+                    }, ]
+                ],
+                data: [{
+
+                }],
+                page: true,
+                limits: [10, 30, 50, 100],
+                response: {
+                    statusName: 'code',
+                    statusCode: 0,
+                    msgName: 'msg',
+                    countName: 'layuiCount',
+                    dataName: 'layuiData'
+                },
+                done: function(res, page, count) {
+
+                }
+            });
+
+
+        });
+    </script>
+
+
+
+    <script src="./lib/layui/lay/modules/jquery.js" charset="utf-8"></script>
+    <script>
+        layui.use('layer', function() {
+            var $ = layui.jquery,
+                layer = layui.layer;
+            $(document).on('click', "#test1", function() {
+                layui.use('table', function() {
+                    table = layui.table;
+                    table.render({
+                        elem: '#tab1',
+                        height: 300,
+                        totalRow: true,
+                        cols: [
+                            [{
+                                type: 'radio'
+                            }, {
+                                field: 'id',
+                                title: '案件ID ',
+                                width: 100,
+
+                            }, {
+                                field: 'toricd',
+                                title: '取引先名',
+                                width: 120
+                            }, {
+                                field: 'mattername',
+                                title: '案件名',
+                                minWidth: 120
+                            }, {
+                                fixed: 'right',
+                                title: '操作',
+                                toolbar: '#barDemo2',
+                                width: 100
+                            }]
+                        ],
+                        data: [{
+                            "id": "3",
+                            "toricd": "大山システム株式会社",
+                            "mattername": "電子書籍",
+                        }],
+                        page: true,
+                        limits: [10, 30, 50, 100],
+                        response: {
+                            statusName: 'code',
+                            statusCode: 0,
+                            msgName: 'msg',
+                            countName: 'layuiCount',
+                            dataName: 'layuiData'
+                        },
+                        done: function(res, page, count) {
+
+                        }
+                    });
+
+                });
+
+            });
+            $(document).on('click', "#test2", function() {
+                layui.use('table', function() {
+                    table = layui.table;
+                    table.render({
+                        elem: '#tab2',
+                        height: 300,
+                        totalRow: true,
+                        cols: [
+                            [{
+                                type: 'radio'
+                            }, {
+                                field: 'id',
+                                title: '社員ID ',
+                                width: 100,
+
+
+
+                            }, {
+                                field: 'toricd',
+                                title: '社員名',
+                                width: 120,
+
+
+                            }, {
+                                field: 'mattername',
+                                title: '仕事状態',
+                                minWidth: 120,
+
+
+                            }, {
+                                fixed: 'right',
+                                title: '操作',
+                                toolbar: '#barDemo',
+                                width: 100
+                            }]
+                        ],
+                        data: [{
+                            "id": "1",
+                            "toricd": "小島",
+                            "mattername": "待機中",
+
+
+
+                        }, {
+                            "id": "2",
+                            "toricd": "大島",
+                            "mattername": "稼働中",
+                        }],
+                        page: true,
+                        limits: [10, 30, 50, 100],
+                        done: function(res, curr, count) {
+                            console.log(res);
+                            console.log(curr);
+                            console.log(count);
+
+                            res.data.forEach(function(item, index) {
+
+                                var tr = $(".layui-table").find("tbody tr[data-index='" + 1 + "']");
+                                tr.css("background-color", "yellow");
+
+
+
+                            });
+                        }
+                    });
+                })
+            });
+
+        });
+    </script>
+
+
+    </script>
+    <script src="./lib/layui/lay/modules/jquery.js" charset="utf-8"></script>
+    <script>
+        layui.use('layer', function() {
+            var $ = layui.jquery,
+                layer = layui.layer;
+            $(document).on('click', "#c1", function() {
+                layer.open({
+                    type: 2,
+                    content: 'pe-l.html',
+                    area: ['500px', '500px']
+                });
+
+            });
+            $(document).on('click', "#c2", function() {
+                layer.open({
+                    type: 2,
+                    content: 'ma-l.html',
+                    area: ['500px', '500px']
+                });
+
+            });
+            $(document).on('click', "#c3", function() {
+                layer.open({
+                    type: 2,
+                    content: 'pe-ma-l.html',
+                    area: ['800px', '800px']
+                });
+
+            });
+
+        });
+    </script>
+
+
+
+
+
+
+</body>
+
+
+</html>

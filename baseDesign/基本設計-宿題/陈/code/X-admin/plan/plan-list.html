@@ -64,7 +64,7 @@
                     </li>
                     <li class="layui-nav-item layui-nav-itemed">
                         <dd class="">
-                            <a href="torihikisaki-list.html">test</a>
+                            <a href="../match/match.html">マッチング</a>
                         </dd>
                     </li>
                     <li class="layui-nav-item layui-nav-itemed">
@@ -136,6 +136,16 @@
                 <div class="layui-input-inline">
                     <input type="text" class="layui-input" id="test6" placeholder=" - ">
                 </div>
+                <div class="layui-input-inline layui-show-xs-block">
+                    <select name="contrller">
+                        <option value ="1">全て四半期</option>
+                                <option value ="1">第１四半期</option>
+                                 <option value ="2">第２四半期</option>
+                                    <option value="3">第３四半期</option>
+                                  <option value="4">第４四半期</option>
+                              
+                                </select>
+                </div>
                 <div class="layui-inline layui-show-xs-block">
                     <input class="layui-input" placeholder="取引先名"></div>
                 <div class="layui-inline layui-show-xs-block">
@@ -148,7 +158,7 @@
 
                 <button class="layui-btn " id="cuyika">顧客行動計画追加</button>
                 <hr>
-                <div class="form-group col-sm-12" id="tab1">
+                <div class="form-group col-sm-12" id="tab2">
                     <table class="layui-hide" lay-filter="jqGridFilter"></table>
 
 
@@ -164,7 +174,7 @@
                     layui.use('table', function() {
                         table = layui.table;
                         table.render({
-                            elem: '#tab1',
+                            elem: '#tab2',
                             height: 500,
                             cols: [
                                 [{
@@ -189,40 +199,20 @@
                                         rowspan: 2
                                     }, {
                                         align: 'plan',
-                                        title: '実施計画',
-                                        colspan: 3
-                                    }, {
-                                        field: 'kg1',
-                                        title: '第一期実施結果及び改善点',
-                                        width: 220,
-                                        rowspan: 2
+                                        title: '2020',
+                                        colspan: 5
                                     }, {
                                         align: 'plan',
-                                        title: '実施計画',
-                                        colspan: 3
-                                    }, {
-                                        field: 'kg2',
-                                        title: '第二期実施結果及び改善点',
-                                        width: 220,
-                                        rowspan: 2
+                                        title: '2020',
+                                        colspan: 5
                                     }, {
                                         align: 'plan',
-                                        title: '実施計画',
-                                        colspan: 3
-                                    }, {
-                                        field: 'kg3',
-                                        title: '第三期実施結果及び改善点',
-                                        width: 220,
-                                        rowspan: 2
+                                        title: '2020',
+                                        colspan: 5
                                     }, {
                                         align: 'plan',
-                                        title: '実施計画',
-                                        colspan: 3
-                                    }, {
-                                        field: 'kg4',
-                                        title: '第四期実施結果及び改善点',
-                                        width: 220,
-                                        rowspan: 2
+                                        title: '2020',
+                                        colspan: 5
                                     }, {
                                         field: 'bk',
                                         title: '備考',
@@ -273,6 +263,14 @@
                                     title: '3月',
                                     width: 170
                                 }, {
+                                    field: 'k',
+                                    title: '第１四半期実施結果',
+                                    width: 170
+                                }, {
+                                    field: 's',
+                                    title: '第１四半期実施改善点',
+                                    width: 170
+                                }, {
                                     field: '4m',
                                     title: '4月',
                                     width: 170
@@ -283,6 +281,14 @@
                                 }, {
                                     field: '6m',
                                     title: '6月',
+                                    width: 170
+                                }, {
+                                    field: 'k',
+                                    title: '第2四半期実施結果',
+                                    width: 170
+                                }, {
+                                    field: 's',
+                                    title: '第2四半期実施改善点',
                                     width: 170
                                 }, {
                                     field: '7m',
@@ -297,6 +303,14 @@
                                     title: '9月',
                                     width: 170
                                 }, {
+                                    field: 'k',
+                                    title: '第3四半期実施結果',
+                                    width: 170
+                                }, {
+                                    field: 's',
+                                    title: '第3四半期実施改善点',
+                                    width: 170
+                                }, {
                                     field: '10m',
                                     title: '10月',
                                     width: 170
@@ -307,6 +321,14 @@
                                 }, {
                                     field: '12m',
                                     title: '12月',
+                                    width: 170
+                                }, {
+                                    field: 'k',
+                                    title: '結果第4四半期実施',
+                                    width: 170
+                                }, {
+                                    field: 's',
+                                    title: '第4四半期実施改善点',
                                     width: 170
                                 }],
 
