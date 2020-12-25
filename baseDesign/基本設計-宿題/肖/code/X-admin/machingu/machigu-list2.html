@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html class="x-admin-sm">
+
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎页面-X-admin2.2</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/xadmin.css">
+    <script src="../lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/xadmin.js"></script>
+    <script src="../jquery/jquery-3.5.1.js"></script>
+    <script src="../jquery/jquery-3.5.1.min.js"></script>
+    <!--[if lt IE 9]>
+          <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+          <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+
+<body>
+    <div class="layui-fluid " style="width: 47%;margin-top:5px;float: left">
+        <div class="layui-card">
+            <div class="layui-card-body">
+                <form class="layui-form layui-col-space5">
+                    <h2>案件レスト</h2>
+                    <div style="padding-top: 15px;">
+                        <div class="layui-input-inline layui-show-xs-block">
+                            <input type="text" name="username" placeholder="案件名" autocomplete="off" class="layui-input"></div>
+                        <div class="layui-input-inline layui-show-xs-block">
+                            <input type="text" name="username" placeholder="必要スキル" autocomplete="off" class="layui-input"></div>
+                        <div class="layui-input-inline layui-show-xs-block">
+                            <select name="contrller">
+                                <option value="">案件状态</option>
+                                <option value="0">営業待ち</option>
+                                <option value="1">営業中（複数要員希望）</option>
+                                <option value="2">営業完了</option>
+                                </select>
+                        </div>
+
+
+                        <div class="layui-input-inline layui-show-xs-block">
+                            <button class="layui-btn" lay-submit="" lay-filter="sreach">
+                            <i class="layui-icon">&#xe615;</i></button>
+                        </div>
+                </form>
+                </div>
+                <table class="layui-table layui-form" id="toucha" name="table" style="margin-top: 15px;">
+
+                    <thead>
+                        <tr>
+                            <th style="width: 50px;">選択</th>
+                            <th>案件名</th>
+                        </tr>
+                    </thead>
+
+                    <tr>
+                        <td><input type="radio" id="checkAll" name="checkAll" /></td>
+                        <td><input type="hidden" class="ankenmei">
+                            <a onclick="xadmin.open('案件詳細','machingu-anken.html' ,800,600)" href="javascript:;">AI（機械学習開発）1</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="checkAll" name="checkAll" /></td>
+                        <td><input type="hidden" class="ankenmei"><a onclick="xadmin.open('案件詳細','machingu-anken.html' ,800,600)" href="javascript:;">AI（機械学習開発）2</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="checkAll" name="checkAll" /></td>
+                        <td><input type="hidden" class="ankenmei"><a onclick="xadmin.open('案件詳細','machingu-anken.html' ,800,600)" href="javascript:;">AI（機械学習開発）3</a>
+                        </td>
+                    </tr>
+                    <!-- <tbody id="anken_data">
+                    </tbody>  -->
+
+                </table>
+            </div>
+        </div>
+        <div class="page">
+            <div>
+                <a class="prev" href="">&lt;&lt;</a>
+                <a class="num" href="">1</a>
+                <span class="current">2</span>
+                <a class="num" href="">3</a>
+                <a class="num" href="">489</a>
+                <a class="next" href="">&gt;&gt;</a></div>
+        </div>
+    </div>
+    </div>
+    <div class="layui-fluid " style="width: 43%;margin-top:5px;float: left ;">
+
+        <div class="layui-card">
+            <div class="layui-card-body">
+                <form class="layui-form layui-col-space5">
+                    <h2>社員レスト</h2>
+                    <div style="padding-top: 15px;">
+                        <div class="layui-input-inline layui-show-xs-block">
+                            <input type="text" name="username" placeholder="社員名" autocomplete="off" class="layui-input"></div>
+                        <div class="layui-input-inline layui-show-xs-block">
+                            <input type="text" name="username" placeholder="スキル" autocomplete="off" class="layui-input"></div>
+                        <div class="layui-input-inline layui-show-xs-block">
+                            <select name="contrller">
+                                <option value="">稼働状态</option>
+                                <option value="0">稼働中</option>
+                                <option value="1">待機中</option>                             
+                                </select>
+                        </div>
+
+                        <div class="layui-input-inline layui-show-xs-block">
+                            <button class="layui-btn" lay-submit="" lay-filter="sreach">
+                            <i class="layui-icon">&#xe615;</i></button>
+                        </div>
+                </form>
+                </div>
+                <table class="layui-table layui-form" id="touchs" name="table" style="margin-top: 15px;" 　>
+                    <thead>
+                        <tr>
+                            <th style="width: 50px;">選択</th>
+                            <th>社員名</th>
+                        </tr>
+
+                    </thead>
+                    <td><input type="radio" id="checkAll" name="checkAll" /></td>
+                    <td><input type="hidden" class="ankenmei">
+                        <a onclick="xadmin.open('社員詳細','machingu-syain.html' ,800,450)" id="aa" href="javascript:;">肖待機中</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="checkAll" name="checkAll" /></td>
+                        <td><input type="hidden" class="ankenmei"><a onclick="xadmin.open('社員詳細','machingu-syain.html' ,800,450)" id="aa" href="javascript:;">肖稼働中</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="checkAll" name="checkAll" /></td>
+                        <td><input type="hidden" class="ankenmei"><a onclick="xadmin.open('社員詳細','machingu-anken.syain' ,800,450)" id="aa" href="javascript:;">肖待機中</a>
+                        </td>
+                    </tr>
+                    <!-- <tbody id="syain_data">
+                    </tbody> -->
+                </table>
+            </div>
+
+        </div>
+        <div class="page">
+            <div>
+                <a class="prev" href="">&lt;&lt;</a>
+                <a class="num" href="">1</a>
+                <span class="current">2</span>
+                <a class="num" href="">3</a>
+                <a class="num" href="">489</a>
+                <a class="next" href="">&gt;&gt;</a></div>
+        </div>
+
+    </div>
+    </br>
+    <div class="layui-row" style="text-align:center; width:100%;height:100%;margin:0px; ">
+        <div class="layui-inline layui-show-xs-block" style="align-self: center;">
+            <button class="layui-btn " onclick="xadmin.open('マッチング詳細','machingu-anken.html' ,1000,600)">マッチング</button>
+        </div>
+    </div>
+
+</body>
+
+<!-- <script>
+    window.onload = function() {
+
+        var tra = document.getElementById("toucha").getElementsByClassName("ankenmei");
+        for (let j = 0; j < tra.length; j++) {
+            tra[j].onclick = function() {
+                xadmin.open('案件詳細', 'machingu-anken.html', 800, 600);
+            }
+
+        }
+        var trs = document.getElementById("touchs").getElementsByTagName('tr');
+        for (let j = 0; j < trs.length; j++) {
+            trs[j].onclick = function() {
+
+                xadmin.open('社員詳細', 'machingu-syain.html', 800, 600);
+            }
+
+        }
+
+    };
+</script> -->
+
+<script>
+    window.onload = function() {
+        $("a:contains(肖稼働中)").css("background", "yellow");
+    };
+</script>
+<script type="text/javascript">
+    var ankendatas = [{
+        "ankenmei": "AI（機械学習開発）1",
+        "sukiru": "1. RESTfulAPIの実装経験があることが必須。",
+        "basyou": "東京23区内",
+        "kuni": "日本",
+        "nihongo": "コミュニケーション能力高い",
+        "rennei": "35以上",
+        "stauts": "営業中",
+        "tantousya": "ショウ",
+        "ankengaiyou": "新規AIソリューション導入における機械学習部分の開発。 AIモデルの精度改善、OpenCVなどの画像分析ライブラリによる前処理/後処理の実装を行う。"
+
+    }, {
+        "ankenmei": "AI（機械学習開発）2",
+        "sukiru": "1. RESTfulAPIの実装経験があることが必須。",
+        "basyou": "東京23区内",
+        "kuni": "日本",
+        "nihongo": "コミュニケーション能力高い",
+        "rennei": "35以上",
+        "stauts": "営業中",
+        "tantousya": "ショウ",
+        "ankengaiyou": "新規AIソリューション導入における機械学習部分の開発。 AIモデルの精度改善、OpenCVなどの画像分析ライブラリによる前処理/後処理の実装を行う。"
+
+    }, {
+        "ankenmei": "AI（機械学習開発）3",
+        "sukiru": "1. RESTfulAPIの実装経験があることが必須。",
+        "basyou": "東京23区内",
+        "kuni": "日本",
+        "nihongo": "コミュニケーション能力高い",
+        "rennei": "35以上",
+        "stauts": "営業中",
+        "tantousya": "ショウ",
+        "ankengaiyou": "新規AIソリューション導入における機械学習部分の開発。 AIモデルの精度改善、OpenCVなどの画像分析ライブラリによる前処理/後処理の実装を行う。"
+
+    }];
+    // $(function() {
+    //     var anken = "";
+    //     for (var i in ankendatas) {
+    //         anken += "<tr >";
+    //         anken += "<td>";
+    //         anken += "<input input type= radio >";
+    //         anken += "</td>";
+    //         anken += "<td id=only>" + ankendatas[i].ankenmei + "</td>";
+    //         // tableHtml += "<td>" + datas[i].url + "</td>";
+    //         // tableHtml += "<td>" + datas[i].type + "</td>";
+    //         anken += "</tr>";
+
+    //     }
+    //     $("#anken_data").html(anken);
+    // })
+</script>
+<script type="text/javascript">
+    var syaindatas = [{
+        "id": 1,
+        "name": "肖稼働中",
+        "sex": "女",
+        "sukiru": "java",
+        "kuni": "中国",
+        "rennei": "23",
+        "stauts": "稼働中"
+    }, {
+        "id": 1,
+        "name": "肖待機中",
+        "sex": "女",
+        "sukiru": "java",
+        "kuni": "中国",
+        "rennei": "23",
+        "stauts": "待機中"
+
+    }, {
+        "id": 1,
+        "name": "肖稼働中",
+        "sex": "女",
+        "sukiru": "java",
+        "kuni": "中国",
+        "rennei": "23",
+        "stauts": "稼働中"
+    }, {
+        "id": 1,
+        "name": "肖稼働中",
+        "sex": "女",
+        "sukiru": "java",
+        "kuni": "中国",
+        "rennei": "23",
+        "stauts": "稼働中"
+    }];
+    $(function() {
+        var syain = "";
+        for (var i in syaindatas) {
+            if (syaindatas[i].stauts == "稼働中") {
+                syain += "<tr style='background:yellow'>";
+                syain += "<td >" + syaindatas[i].name + "</td>";
+                syain += "</tr>";
+
+            } else {
+                syain += "<tr>";
+                syain += "<td >" + syaindatas[i].name + "</td>";
+                syain += "</tr>";
+            }
+
+        }
+        $("#syain_data").html(syain);
+    })
+</script>
+<script>
+    layui.use(['laydate', 'form'], function() {
+        var laydate = layui.laydate;
+        var form = layui.form;
+
+
+        // 监听全选
+        form.on('checkbox(checkall)', function(data) {
+
+            if (data.elem.checked) {
+                $('tbody input').prop('checked', true);
+            } else {
+                $('tbody input').prop('checked', false);
+            }
+            form.render('checkbox');
+        });
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#start' //指定元素
+        });
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#end' //指定元素
+        });
+
+
+    });
+
+    /*用户-删除*/
+    function member_del(obj, id) {
+        layer.confirm('削除してもよろしいですか？', {
+            icon: 3,
+            title: 'メッセージ',
+            btn: ['確認', '取消']
+        }, function(index) {
+            //发异步删除数据
+            $(obj).parents("tr").remove();
+            layer.msg('削除しました!', {
+                icon: 1,
+                time: 1000
+            });
+        });
+    }
+
+
+
+    function delAll(argument) {
+        var ids = [];
+
+        // 获取选中的id 
+        $('tbody input').each(function(index, el) {
+            if ($(this).prop('checked')) {
+                ids.push($(this).val())
+            }
+        });
+
+        layer.confirm('削除してもよろしいですか？' + ids.toString(), function(index) {
+            //捉到所有被选中的，发异步进行删除
+            layer.msg('删除成功', {
+                icon: 1
+            });
+            $(".layui-form-checked").not('.header').parents('tr').remove();
+        });
+    }
+</script>
+<script>
+    layui.use('table', function() {
+        //监听行单击事件（双击事件为：rowDouble）
+        table.on('row(test)', function(obj) {
+            var data = obj.data;
+
+            layer.alert(JSON.stringify(data), {
+                title: '当前行数据：'
+            });
+
+            //标注选中样式
+            obj.tr.addClass('layui-table-click').siblings().removeClass('layui-table-click');
+        });
+
+    });
+</script>
+
+
+
+
+</html>

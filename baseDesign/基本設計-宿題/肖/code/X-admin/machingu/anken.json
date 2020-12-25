@@ -1,0 +1,17 @@
+{
+    "code": 0,
+    "msg": "",
+    "count": 1000,
+    "data": [{
+        "id": 1,
+        "ankenmei": "AI（機械学習開発）",
+        "sukiru": "1. RESTfulAPIの実装経験があることが必須。",
+        "basyou": "東京23区内",
+        "kuni": "日本",
+        "nihongo": "コミュニケーション能力高い",
+        "rennei": "35以上",
+        "stauts": "営業中",
+        "tantousya": "ショウ",
+        "ankengaiyou": "新規AIソリューション導入における機械学習部分の開発。 AIモデルの精度改善、OpenCVなどの画像分析ライブラリによる前処理/後処理の実装を行う。"
+    }]
+}

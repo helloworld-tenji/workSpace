@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="x-admin-sm">
+
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎页面-X-admin2.2</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/xadmin.css">
+    <script src="../lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/xadmin.js"></script>
+</head>
+
+<body>
+    <!-- <div class="x-nav">
+            <span class="layui-breadcrumb">
+                <a href="">首页</a>
+                <a href="">演示</a>
+                <a>
+                    <cite>导航元素</cite></a>
+            </span>
+            <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" onclick="location.reload()" title="刷新">
+                <i class="layui-icon layui-icon-refresh" style="line-height:30px"></i>
+            </a>
+        </div> -->
+    <div class="layui-fluid">
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md12">
+                <div class="layui-card">
+                    <div class="layui-card-body ">
+                        <form class="layui-form layui-col-space5">
+                            <div class="layui-input-inline layui-show-xs-block">
+                                <input type="text" name="username" placeholder="案件名" autocomplete="off" class="layui-input" size="30"></div>
+                            <div class="layui-input-inline layui-show-xs-block">
+                                <input type="text" name="username" placeholder="社員名" autocomplete="off" class="layui-input" size="50" 　></div>
+                            <div class="layui-input-inline layui-show-xs-block">
+                                <input type="text" name="username" placeholder="スキル" autocomplete="off" class="layui-input" size="30"></div>
+                            <div class="layui-input-inline layui-show-xs-block">
+                                <input type="text" name="username" placeholder="面接予定日" autocomplete="off" class="layui-input" size="30"></div>
+                            <div class="layui-input-inline layui-show-xs-block">
+                                <input type="text" name="username" placeholder="面接予定場所" autocomplete="off" class="layui-input" size="30"></div>
+                            <div class="layui-input-inline layui-show-xs-block">
+                                <button class="layui-btn" lay-submit="" lay-filter="sreach">
+                                        <i class="layui-icon">&#xe615;</i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form-group col-sm-12" id="tab1">
+                        <table class="layui-hide" lay-filter="jqGridFilter"></table>
+
+
+                    </div>
+                    <script type="text/html" id="barDemo">
+                        <a class="layui-btn layui-btn-xs" lay-event="particulars" onclick="xadmin.open('詳細','eigyoukanri-syousai.html' ,800,600)" href="javascript:;">詳細</a>
+                        <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="edit" id="menseitu" onclick="xadmin.open('面接登録','eigyoukanri-menseitu-edit.html' ,800,600)" href="javascript:;">面接</a>
+                    </script>
+
+                    <script src="/static/build/layui.js"></script>
+
+                    <script>
+                        layui.use('table', function() {
+                            table = layui.table;
+                            table.render({
+                                elem: '#tab1',
+                                height: 400,
+                                totalRow: true,
+                                cols: [
+                                    [{
+                                        field: 'id',
+                                        title: '番号',
+                                        width: 70,
+
+                                    }, {
+                                        field: 'ankenmei',
+                                        title: '案件名',
+                                        width: 200
+                                    }, {
+                                        field: 'syainmei',
+                                        title: '社員名',
+                                        width: 120
+                                    }, {
+                                        field: 'skill',
+                                        title: 'スキル',
+                                        minWidth: 300
+
+                                    }, {
+                                        field: 'yoteibi',
+                                        title: '面接予定日',
+                                        minWidth: 100
+                                    }, {
+                                        field: 'yoteibasyou',
+                                        title: '面接予定場所',
+
+                                        width: 200
+                                    }, {
+                                        field: 'tantousya',
+                                        title: '担当者CD',
+                                        width: 120
+                                    }, {
+                                        field: 'koushibi',
+                                        title: '更新日時',
+                                        minWidth: 150
+                                    }, {
+                                        field: 'koushinsya',
+                                        title: '更新者',
+                                        width: 100
+                                    }, {
+                                        fixed: 'right',
+                                        title: '管理',
+                                        toolbar: '#barDemo',
+                                        width: 150
+                                    }, ]
+                                ],
+                                data: [{
+                                    "id": "1",
+                                    "ankenmei": "AI（機械学習開発）",
+                                    "syainmei": "肖待機中",
+                                    "skill": "RESTfulAPIの実装経験があることが必須。",
+                                    "yoteibi": "2020/2/29",
+                                    "yoteibasyou": "東京23区内",
+                                    "tantousya": "ショウ",
+                                    "koushibi": "2020/2/29 00:00:00",
+                                    "koushinsya": "ショウ",
+
+                                }, {
+                                    "id": "1",
+                                    "ankenmei": "AI（機械学習開発）",
+                                    "syainmei": "肖待機中",
+                                    "skill": "RESTfulAPIの実装経験があることが必須。",
+                                    "yoteibi": "2020/2/29",
+                                    "yoteibasyou": "東京23区内",
+                                    "tantousya": "ショウ",
+                                    "koushibi": "2020/2/29 00:00:00",
+                                    "koushinsya": "ショウ",
+                                }, {
+                                    "id": "1",
+                                    "ankenmei": "AI（機械学習開発）",
+                                    "syainmei": "肖待機中",
+                                    "skill": "RESTfulAPIの実装経験があることが必須。",
+                                    "yoteibi": "2020/2/29",
+                                    "yoteibasyou": "東京23区内",
+                                    "tantousya": "ショウ",
+                                    "koushibi": "2020/2/29 00:00:00",
+                                    "koushinsya": "ショウ",
+                                }],
+                                page: true,
+                                limits: [10, 30, 50, 100],
+                                response: {
+                                    statusName: 'code',
+                                    statusCode: 0,
+                                    msgName: 'msg',
+                                    countName: 'layuiCount',
+                                    dataName: 'layuiData'
+                                },
+                                done: function(res, page, count) {
+
+                                }
+                            });
+
+
+                        });
+                    </script>
+                </div>
+                <script src="./lib/layui/lay/modules/jquery.js" charset="utf-8"></script>
+                <!-- <script>
+                    layui.use('layer', function() {
+                        var $ = layui.jquery,
+                            layer = layui.layer;
+                        $(document).on('click', "#syousai", function() {
+                            layer.open({
+                                type: 2,
+                                content: 'eigyoukanri-syousai.html',
+                                area: ['800px', '600px']
+                            });
+
+                        });
+                        $(document).on('click', "#menseitu", function() {
+                            layer.open({
+                                type: 2,
+                                content: 'eigyoukanri-meiseitu-edit.html',
+                                area: ['800px', '600px']
+                            });
+
+                        });
+
+                    });
+                </script> -->
+                <script>
+                    layui.use('layer', function() {
+                        var $ = layui.jquery,
+                            layer = layui.layer;
+                        $(document).on('click', "#delete", function() {
+                            layer.msg('削除しますか', {
+
+                                btn: ['削除', '取消', ]
+                            });
+                        });
+
+                    });
+                </script>
+
+
+
+
+</body>
+
+
+
+</html>

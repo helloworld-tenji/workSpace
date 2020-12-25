@@ -1,0 +1,16 @@
+{
+    "code": 0,
+    "msg": "",
+    "count": 1000,
+    "data": [{
+        "id": 1,
+        "name": "肖",
+        "sex": "女",
+        "sukiru": "java",
+        "kuni": "中国",
+        "rennei": "23"
+
+
+
+    }]
+}
