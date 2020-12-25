@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
     <link rel="stylesheet" href="../css/font.css">
-    <link rel="stylesheet" href="./torihikisaki.css">
+    <link rel="stylesheet" href="../torihikisaki/torihikisaki.css">
     <script src="../lib/layui/layui.js" charset="utf-8"></script>
     <script type="text/javascript" src="../js/xadmin.js"></script>
     <!--[if lt IE 9]>
@@ -66,7 +66,7 @@
                         <a href="javascript:;">マッチング</a>
                         <dl class="layui-nav-child">
                             <dd> <a href="../match/match.html">マッチング</a></dd>
-                            <dd> <a href="../match/eigyo-list.html">営業中管理</a></dd>
+                            <dd> <a href="eigyo-list.html">営業中管理</a></dd>
 
                         </dl>
 
@@ -78,7 +78,7 @@
                     </li>
                     <li class="layui-nav-item layui-nav-itemed">
                         <dd class="">
-                            <a href="torihikisaki-list.html">test</a>
+                            <a href="eigyo-list.html">test</a>
                         </dd>
                     </li>
                     <li class="layui-nav-item layui-nav-itemed">
@@ -134,13 +134,17 @@
 
     </div>
     <div class="search">
-        <h2>取引先照会</h2>
+        <h2>営業中管理</h2>
         <hr>
         <div class="layui-inline layui-show-xs-block">
 
-            <input class="layui-input" placeholder="取引先名"></div>
+            <input class="layui-input" placeholder="案件名"></div>
         <div class="layui-inline layui-show-xs-block">
-            <input class="layui-input" placeholder="ＢＤ区分"></div>
+            <input class="layui-input" placeholder="社員名"></div>
+        <div class="layui-inline layui-show-xs-block">
+            <input class="layui-input" placeholder="面接予定日"></div>
+        <div class="layui-inline layui-show-xs-block">
+            <input class="layui-input" placeholder="面接予定場所"></div>
 
 
 
@@ -150,8 +154,7 @@
     </div>
     <div class="btn1">
 
-        <button class="layui-btn " id="cuyika">取引先追加</button>
-        <hr>
+
         <div class="form-group col-sm-12" id="tab1">
             <table class="layui-hide" lay-filter="jqGridFilter"></table>
 
@@ -159,8 +162,8 @@
         </div>
         <script type="text/html" id="barDemo">
 
-            <a class="layui-btn layui-btn-xs" lay-event="edit" id="alter">編集</a>
-            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del" id="delete">削除</a>
+            <a class="layui-btn layui-btn-xs" lay-event="edit" id="alter">営業中止</a>
+            <a class="layui-btn  layui-btn-xs" lay-event="del" id="m">面接</a>
         </script>
 
         <script src="/static/build/layui.js"></script>
@@ -181,45 +184,23 @@
 
                         }, {
                             field: 'username',
-                            title: '取引先名',
+                            title: '案件名',
                             width: 120
                         }, {
                             field: 'username2',
-                            title: '取引先名(カタカナ)',
+                            title: '社員名',
                             width: 120
                         }, {
                             field: 'bp',
-                            title: 'BP区分',
+                            title: '面接予定日',
                             minWidth: 150
 
                         }, {
                             field: 'adress',
-                            title: '住所',
+                            title: '面接予定場所',
                             minWidth: 160
                         }, {
-                            field: 'tel',
-                            title: 'Tel',
-                            event: 'setSign',
-                            width: 120
-                        }, {
-                            field: 'mail',
-                            title: 'Mail',
-                            width: 120
-                        }, {
-                            field: 'fax',
-                            title: 'Fax',
-                            minWidth: 160
-                        }, {
-                            field: 'bf',
-                            title: '業務分野',
-                            event: 'setSign',
-                            width: 100
-                        }, {
-                            field: 'bc',
-                            title: '業務内容',
-                            width: 100
-                        }, {
-                            field: 'remarks',
+                            field: 'r',
                             title: '備考',
                             minWidth: 160
                         }, {
@@ -253,16 +234,11 @@
                     ],
                     data: [{
                         "id": "1",
-                        "username": "大山",
-                        "username2": "オオヤマ",
-                        "bp": "個人事業者",
+                        "username": "図書館システム開発",
+                        "username2": "大山",
+                        "bp": "2021/3/8",
                         "adress": "東京都",
-                        "tel": "0906666777",
-                        "mail": "126222@gmail.com",
-                        "fax": "222333999",
-                        "bf": "IT",
-                        "bc": "新規作成",
-                        "remarks": "なし",
+                        "r": "なし",
                         "cd": "001",
                         "a": "2020/12/04",
                         "author": "陳",
@@ -271,77 +247,32 @@
 
                     }, {
                         "id": "1",
-                        "username": "大山",
-                        "username2": "オオヤマ",
-                        "bp": "個人事業者",
+                        "username": "図書館システム開発",
+                        "username2": "大山",
+                        "bp": "2021/3/8",
                         "adress": "東京都",
-                        "tel": "0906666777",
-                        "mail": "126222@gmail.com",
-                        "fax": "222333999",
-                        "bf": "IT",
-                        "bc": "新規作成",
-                        "remarks": "なし",
+                        "r": "なし",
                         "cd": "001",
                         "a": "2020/12/04",
                         "author": "陳",
                         "uptime": "2020/12/04",
                         "changer": "陳",
+
 
                     }, {
                         "id": "1",
-                        "username": "大山",
-                        "username2": "オオヤマ",
-                        "bp": "個人事業者",
+                        "username": "図書館システム開発",
+                        "username2": "大山",
+                        "bp": "2021/3/8",
                         "adress": "東京都",
-                        "tel": "0906666777",
-                        "mail": "126222@gmail.com",
-                        "fax": "222333999",
-                        "bf": "IT",
-                        "bc": "新規作成",
-                        "remarks": "なし",
+                        "r": "なし",
                         "cd": "001",
                         "a": "2020/12/04",
                         "author": "陳",
                         "uptime": "2020/12/04",
                         "changer": "陳",
 
-                    }, {
-                        "id": "1",
-                        "username": "大山",
-                        "username2": "オオヤマ",
-                        "bp": "個人事業者",
-                        "adress": "東京都",
-                        "tel": "0906666777",
-                        "mail": "126222@gmail.com",
-                        "fax": "222333999",
-                        "bf": "IT",
-                        "bc": "新規作成",
-                        "remarks": "なし",
-                        "cd": "001",
-                        "a": "2020/12/04",
-                        "author": "陳",
-                        "uptime": "2020/12/04",
-                        "changer": "陳",
-
-                    }, {
-                        "id": "1",
-                        "username": "大山",
-                        "username2": "オオヤマ",
-                        "bp": "個人事業者",
-                        "adress": "東京都",
-                        "tel": "0906666777",
-                        "mail": "126222@gmail.com",
-                        "fax": "222333999",
-                        "bf": "IT",
-                        "bc": "新規作成",
-                        "remarks": "なし",
-                        "cd": "001",
-                        "a": "2020/12/04",
-                        "author": "陳",
-                        "uptime": "2020/12/04",
-                        "changer": "陳",
-
-                    }],
+                    }, ],
                     page: true,
                     limits: [10, 30, 50, 100],
                     response: {
@@ -371,15 +302,15 @@
             $(document).on('click', "#alter", function() {
                 layer.open({
                     type: 2,
-                    content: 'torihikisaki-edit.html',
+                    content: 'ei-list.html',
                     area: ['500px', '500px']
                 });
 
             });
-            $(document).on('click', "#cuyika", function() {
+            $(document).on('click', "#m", function() {
                 layer.open({
                     type: 2,
-                    content: 'torihikisaki-add.html',
+                    content: 'ｍensetsu.html',
                     area: ['500px', '500px']
                 });
 

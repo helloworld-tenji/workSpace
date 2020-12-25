@@ -62,6 +62,7 @@
                             <a href="../plan/plan-list.html">顧客行動計画管理</a>
                         </dd>
                     </li>
+
                     <li class="layui-nav-item layui-nav-itemed">
                         <a href="javascript:;">マッチング</a>
                         <dl class="layui-nav-child">
@@ -73,7 +74,7 @@
                     </li>
                     <li class="layui-nav-item layui-nav-itemed">
                         <dd class="">
-                            <a href="../Keiyaku/keiyaku.html">契約管理</a>
+                            <a href="keiyaku.html">契約管理</a>
                         </dd>
                     </li>
                     <li class="layui-nav-item layui-nav-itemed">
@@ -134,23 +135,26 @@
 
     </div>
     <div class="search">
-        <h2>取引先照会</h2>
+        <h2>契約書管理</h2>
         <hr>
         <div class="layui-inline layui-show-xs-block">
 
-            <input class="layui-input" placeholder="取引先名"></div>
+            <input class="layui-input" placeholder="取引先CD"></div>
         <div class="layui-inline layui-show-xs-block">
-            <input class="layui-input" placeholder="ＢＤ区分"></div>
-
-
-
+            <input class="layui-input" placeholder="契約日"></div>
         <div class="layui-inline layui-show-xs-block">
+            <input class="layui-input" placeholder="年限"></div>
+        <div class="layui-inline layui-show-xs-block">
+            <input class="layui-input" placeholder="更新区分"></div>
+        <div class="layui-inline layui-show-xs-block">
+
             <button class="layui-btn " id="test">検索</button>
         </div>
     </div>
     <div class="btn1">
 
-        <button class="layui-btn " id="cuyika">取引先追加</button>
+        <button class="layui-btn " id="cuyika">契約登録</button>
+
         <hr>
         <div class="form-group col-sm-12" id="tab1">
             <table class="layui-hide" lay-filter="jqGridFilter"></table>
@@ -159,11 +163,13 @@
         </div>
         <script type="text/html" id="barDemo">
 
+            <a class="layui-btn layui-btn-xs" lay-event="edit" id="a2">契約書一覧</a>
             <a class="layui-btn layui-btn-xs" lay-event="edit" id="alter">編集</a>
             <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del" id="delete">削除</a>
         </script>
 
         <script src="/static/build/layui.js"></script>
+
 
         <script>
             layui.use('table', function() {
@@ -171,62 +177,61 @@
                 table.render({
                     elem: '#tab1',
                     height: 400,
-
+                    toolbar: true,
+                    title: '用户数据表',
                     totalRow: true,
+
                     cols: [
                         [{
+                            type: 'checkbox'
+                        }, {
                             field: 'id',
                             title: 'ID',
                             width: 50,
 
                         }, {
                             field: 'username',
-                            title: '取引先名',
+                            title: '取引先CD',
                             width: 120
                         }, {
                             field: 'username2',
-                            title: '取引先名(カタカナ)',
+                            title: '契約日',
                             width: 120
                         }, {
                             field: 'bp',
-                            title: 'BP区分',
+                            title: '取引開始日',
                             minWidth: 150
 
                         }, {
                             field: 'adress',
-                            title: '住所',
+                            title: '取引終了日',
                             minWidth: 160
                         }, {
                             field: 'tel',
-                            title: 'Tel',
-                            event: 'setSign',
+                            title: '年限',
+
                             width: 120
                         }, {
                             field: 'mail',
-                            title: 'Mail',
+                            title: '更新区分',
                             width: 120
                         }, {
                             field: 'fax',
-                            title: 'Fax',
+                            title: '契約書保存サーバー',
                             minWidth: 160
                         }, {
                             field: 'bf',
-                            title: '業務分野',
+                            title: '契約書保存パス',
                             event: 'setSign',
-                            width: 100
+                            width: 160
                         }, {
                             field: 'bc',
-                            title: '業務内容',
-                            width: 100
+                            title: '契約書ファイル名',
+                            width: 160
                         }, {
                             field: 'remarks',
                             title: '備考',
                             minWidth: 160
-                        }, {
-                            field: 'cd',
-                            title: '担当者CD',
-                            event: 'setSign',
-                            width: 80
                         }, {
                             field: 'a',
                             title: '作成日時',
@@ -248,20 +253,20 @@
                             fixed: 'right',
                             title: '操作',
                             toolbar: '#barDemo',
-                            width: 150
+                            width: 250
                         }, ]
                     ],
                     data: [{
                         "id": "1",
                         "username": "大山",
-                        "username2": "オオヤマ",
-                        "bp": "個人事業者",
-                        "adress": "東京都",
-                        "tel": "0906666777",
-                        "mail": "126222@gmail.com",
-                        "fax": "222333999",
-                        "bf": "IT",
-                        "bc": "新規作成",
+                        "username2": "2020/7/13",
+                        "bp": "2020/10/1",
+                        "adress": "2022/10/1",
+                        "tel": "2",
+                        "mail": "--",
+                        "fax": "--",
+                        "bf": "--",
+                        "bc": "契約書",
                         "remarks": "なし",
                         "cd": "001",
                         "a": "2020/12/04",
@@ -272,14 +277,14 @@
                     }, {
                         "id": "1",
                         "username": "大山",
-                        "username2": "オオヤマ",
-                        "bp": "個人事業者",
-                        "adress": "東京都",
-                        "tel": "0906666777",
-                        "mail": "126222@gmail.com",
-                        "fax": "222333999",
-                        "bf": "IT",
-                        "bc": "新規作成",
+                        "username2": "2020/7/13",
+                        "bp": "2020/10/1",
+                        "adress": "2022/10/1",
+                        "tel": "2",
+                        "mail": "--",
+                        "fax": "--",
+                        "bf": "--",
+                        "bc": "契約書",
                         "remarks": "なし",
                         "cd": "001",
                         "a": "2020/12/04",
@@ -290,14 +295,14 @@
                     }, {
                         "id": "1",
                         "username": "大山",
-                        "username2": "オオヤマ",
-                        "bp": "個人事業者",
-                        "adress": "東京都",
-                        "tel": "0906666777",
-                        "mail": "126222@gmail.com",
-                        "fax": "222333999",
-                        "bf": "IT",
-                        "bc": "新規作成",
+                        "username2": "2020/7/13",
+                        "bp": "2020/10/1",
+                        "adress": "2022/10/1",
+                        "tel": "2",
+                        "mail": "--",
+                        "fax": "--",
+                        "bf": "--",
+                        "bc": "契約書",
                         "remarks": "なし",
                         "cd": "001",
                         "a": "2020/12/04",
@@ -305,43 +310,7 @@
                         "uptime": "2020/12/04",
                         "changer": "陳",
 
-                    }, {
-                        "id": "1",
-                        "username": "大山",
-                        "username2": "オオヤマ",
-                        "bp": "個人事業者",
-                        "adress": "東京都",
-                        "tel": "0906666777",
-                        "mail": "126222@gmail.com",
-                        "fax": "222333999",
-                        "bf": "IT",
-                        "bc": "新規作成",
-                        "remarks": "なし",
-                        "cd": "001",
-                        "a": "2020/12/04",
-                        "author": "陳",
-                        "uptime": "2020/12/04",
-                        "changer": "陳",
-
-                    }, {
-                        "id": "1",
-                        "username": "大山",
-                        "username2": "オオヤマ",
-                        "bp": "個人事業者",
-                        "adress": "東京都",
-                        "tel": "0906666777",
-                        "mail": "126222@gmail.com",
-                        "fax": "222333999",
-                        "bf": "IT",
-                        "bc": "新規作成",
-                        "remarks": "なし",
-                        "cd": "001",
-                        "a": "2020/12/04",
-                        "author": "陳",
-                        "uptime": "2020/12/04",
-                        "changer": "陳",
-
-                    }],
+                    }, ],
                     page: true,
                     limits: [10, 30, 50, 100],
                     response: {
@@ -371,7 +340,7 @@
             $(document).on('click', "#alter", function() {
                 layer.open({
                     type: 2,
-                    content: 'torihikisaki-edit.html',
+                    content: 'keiyaku-edit.html',
                     area: ['500px', '500px']
                 });
 
@@ -379,7 +348,15 @@
             $(document).on('click', "#cuyika", function() {
                 layer.open({
                     type: 2,
-                    content: 'torihikisaki-add.html',
+                    content: 'keiyaku-add.html',
+                    area: ['500px', '500px']
+                });
+
+            });
+            $(document).on('click', "#a2", function() {
+                layer.open({
+                    type: 2,
+                    content: 'kelyaku-d.html',
                     area: ['500px', '500px']
                 });
 
