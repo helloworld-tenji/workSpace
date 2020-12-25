@@ -31,7 +31,7 @@ layui.use('laydate', function(){
             ,{field: 'author', title: '作成者', width:100,}
             ,{field: 'updateDate', title: '更新時日', width:120,}
             ,{field: 'changer', title: '更新者', width:100,}
-            ,{field: 'operation', title: '操作', width:120,toolbar:'#iconDemo' }
+            ,{field: 'operation', title: '操作', width:120,toolbar:'#iconDemo', sort: true, fixed: 'right' }
       ]]
     });
     

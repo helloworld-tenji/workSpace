@@ -35,6 +35,7 @@
 .lookup-lower {
 
     position: absolute;
+    width: 90%;
     left: 1%;
     bottom: 0;
     top: 20%;
