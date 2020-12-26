@@ -1,3 +1,4 @@
+@input url();
 .lookup {
     position: absolute;
     left: 1%;
@@ -45,4 +46,7 @@
 
 #toolbarDemo div {
     float: left;
+}
+.layui-table th {
+    text-align: center;
 }

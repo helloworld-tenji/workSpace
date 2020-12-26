@@ -19,7 +19,7 @@ layui.use('laydate', function(){
       ,url: '../jsonData/clientData.json' //データの保存先
       ,toolbar: '#toolbarDemo'
       ,cols: [[
-          {title: '第１四半期', align: 'center', colspan: 10 }
+          {title: '第１四半期', align: 'center', colspan: 9 }
       ],
         [ {field: 'Moon', title: '月', width:50}
             ,{field: 'Moon', title: '取引先CD', width:100  }
@@ -30,7 +30,7 @@ layui.use('laydate', function(){
             ,{field: 'implementation', title: '実施', width:200,}
             ,{field: 'implementationResults', title: '実施結果', width:200,}
             ,{field: 'improvement', title: '改善点', width:200,}
-            ,{field: 'operation', title: '操作', width:120,toolbar:'#iconDemo' }
+            ,{field: 'operation', title: '操作', width:120,toolbar:'#iconDemo', sort: true, fixed: 'right' }
       ]]
     });
     

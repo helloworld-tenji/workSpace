@@ -17,13 +17,17 @@
 
 <body>
     <div class="lookup">
-        <h2>案件管理</h2>
-        <input type="text" placeholder="案件ID">
-        <input type="text" placeholder="名前">
-        <input type="text" id="year" 　placeholder="年度" onfocus="this.blur();" placeholder="開始時間">
-        <input type="button" class="layui-btn" value="確認">
-        <hr />
-        <div class="lookup-personnel">
+        <div class="div-inline">
+            <h2>案件管理</h2>
+            <input type="text" placeholder="案件ID">
+            <input type="text" placeholder="名前">
+            <input type="text" id="year" 　placeholder="年度" onfocus="this.blur();" placeholder="開始時間">
+            <input type="button" class="layui-btn" value="確認">
+            <table id="matching-records"></table>
+        </div>
+
+        <!-- <div class="lookup-personnel"> -->
+        <div class="div-inline">
             <h2>要員検索</h2>
             <input type="text" placeholder="社員ID">
             <input type="text" placeholder="名前">
@@ -33,51 +37,29 @@
                 <option value="1">待機中</option>
             </select>
             <input type="button" class="layui-btn" value="確認">
+            <table id="matching-lower-records"></table>
         </div>
     </div>
     <hr />
 
     <div class="lower">
         <div class="div-inline">
-            <!-- <div class="layui-card-body "> -->
-            <table class="layui-table layui-form">
-                <thead>
-                    <h2>案件一覧</h2>
-                    <tr>
-                        <th width="70">案件ID</th>
-                        <th width="70">会社名</th>
-                        <th width="100">状态</th>
-                        <th width="90">操作</th>
-                        <!-- <th width="20">
-                            <input type="checkbox" name="" lay-skin="primary">
-                        </th> -->
-                </thead>
-                <tbody class="caseData" id="data">
-
-                </tbody>
-            </table>
-            <!-- </div> -->
+            <!-- <h2>案件一覧</h2> -->
+            <!-- <table id="matching-records"></table> -->
         </div>
         <div class="div-inline">
-            <table class="layui-table layui-form">
-                <thead>
-                    <h2>要員一覧</h2>
-                    <tr>
-                        <th width="70">社員ID</th>
-                        <th width="70">名前</th>
-                        <th width="100">状态</th>
-                        <th width="90">操作</th>
-                        <!-- <th width="20">
-                            <input type="checkbox" name="" lay-skin="primary">
-                        </th> -->
-                </thead>
-                <tbody class="caseData" id="data">
 
-                </tbody>
+            <!-- <h2>要員一覧</h2> -->
+            <!-- <table id="matching-records"></table> -->
             </table>
         </div>
     </div>
 
 </body>
+<script type="text/html" id="iconDemo">
+    <a class="layui-btn layui-btn-xs" onclick="xadmin.open('案件管理','./torihikisaki-add.html',600,400)"
+        lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" onclick="list_del(this,'idを削除します')" lay-event="del">删除</a>
+</script>
 
 </html>

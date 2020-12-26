@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="../css/torihikisaki-list.css">
   <script src="../lib/layui/layui.js"></script>
   <script src="../js/contractManagement.js"></script>
-  <script src="../js/from.js"></script>
   <script src="../js/xadmin.js"></script>
   <title>契約管理</title>
 </head>
@@ -16,10 +15,10 @@
 <body>
   <div class="lookup">
     <h2>契約一覧</h2>
-    <input type="text" placeholder="取引先CD">
-    <input type="text" placeholder="名前">
+    <input type="text" id="customerCd" placeholder="取引先CD">
+    <input type="text" id="userName" placeholder="名前">
     <input type="text" id="year" 　placeholder="年度" onfocus="this.blur();" placeholder="契約開始日">
-    <input type="button" class="layui-btn" value="確認">
+    <input type="button" class="layui-btn" onclick="getValue()" value="確認">
   </div>
 
   <div class="lookup-lower">
@@ -39,6 +38,22 @@
   <a class="layui-btn layui-btn-xs" onclick="xadmin.open('行動計画','./torihikisaki-add.html',600,400)"
     lay-event="edit">更新</a>
   <a class="layui-btn layui-btn-danger layui-btn-xs" onclick="list_del(this,'idを削除します')" lay-event="del">删除</a>
+</script>
+
+<script>
+  function getValue() {
+    let customerCd = document.getElementById("customerCd").value;
+    let userName = document.getElementById("userName").value;
+    let year = document.getElementById("year").value;
+    let jsonData = document.getElementById("customer-records");
+    // JSON.stringify(jsonData);
+
+    console.log(customerCd);
+    console.log(userName);
+    console.log(year);
+    console.info(jsonData.json);
+
+  }
 </script>
 
 
