@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="../lib/layui/css/layui.css">
+    <link rel="stylesheet" href="../css/management.css">
+    <script src="../lib/layui/layui.js"></script>
+    <script src="../js/management.js"></script>
+    <!-- <script src="../js/from.js"></script> -->
+    <script src="../js/xadmin.js"></script>
+    <title>営業中管理</title>
+</head>
+
+<body>
+    <div class="lookup">
+        <h2>営業中案件</h2>
+        <input type="text" id="year" 　placeholder="年度" onfocus="this.blur();" placeholder="営業開始日">
+        <input type="text" placeholder="案件ID">
+        <input type="text" placeholder="社員ID">
+        <input type="button" class="layui-btn" value="確認">
+    </div>
+    <hr />
+    <div class="lower-list">
+        <!-- <table>
+            <tr>
+                <td class="gauge-outfit">面接予定日</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="gauge-outfit">面接予定時間</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="gauge-outfit">面接予定場所</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="gauge-outfit">面接同行者</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="gauge-outfit">面接予定送信パターン</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="gauge-outfit">面接予定送信日時</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="gauge-outfit">面接日</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="gauge-outfit">面接時間</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="gauge-outfit">面接場所</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="gauge-outfit">面接人数</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="gauge-outfit">面接表現</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="gauge-outfit">面接結果</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="gauge-outfit">面接送信パターン</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="gauge-outfit">備考</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="gauge-outfit">メール送信回数</td>
+                <td></td>
+            </tr>
+        </table> -->
+
+
+
+        <!-- 案件リスト -->
+        <table id="management"></table>
+
+
+        <script type="text/html" id="barDemo">
+            <a class="layui-btn layui-btn-xs" lay-event="edit" id="alter">営業中止</a>
+            <a class="layui-btn  layui-btn-xs" lay-event="del" id="m">面接</a>
+        </script>
+
+    </div>
+</body>
+
+</html>

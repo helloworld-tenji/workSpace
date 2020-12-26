@@ -29,45 +29,47 @@
             <input type="text" placeholder="名前">
 
             <select>
-                <option value="1">稼働中</option>
-                <option value="2">待機中</option>
+                <option value="0">稼働中</option>
+                <option value="1">待機中</option>
             </select>
             <input type="button" class="layui-btn" value="確認">
         </div>
     </div>
+    <hr />
 
     <div class="lower">
-        <div class="layui-card-body ">
+        <div class="div-inline">
+            <!-- <div class="layui-card-body "> -->
             <table class="layui-table layui-form">
                 <thead>
                     <h2>案件一覧</h2>
                     <tr>
                         <th width="70">案件ID</th>
-                        <th>会社名</th>
+                        <th width="70">会社名</th>
                         <th width="100">状态</th>
                         <th width="90">操作</th>
-                        <th width="20">
+                        <!-- <th width="20">
                             <input type="checkbox" name="" lay-skin="primary">
-                        </th>
+                        </th> -->
                 </thead>
                 <tbody class="caseData" id="data">
 
                 </tbody>
             </table>
+            <!-- </div> -->
         </div>
-        <div>
-
+        <div class="div-inline">
             <table class="layui-table layui-form">
                 <thead>
                     <h2>要員一覧</h2>
                     <tr>
-                        <th width="70">案件ID</th>
-                        <th>会社名</th>
+                        <th width="70">社員ID</th>
+                        <th width="70">名前</th>
                         <th width="100">状态</th>
                         <th width="90">操作</th>
-                        <th width="20">
+                        <!-- <th width="20">
                             <input type="checkbox" name="" lay-skin="primary">
-                        </th>
+                        </th> -->
                 </thead>
                 <tbody class="caseData" id="data">
 

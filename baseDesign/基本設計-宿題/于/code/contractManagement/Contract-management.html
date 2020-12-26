@@ -7,34 +7,26 @@
   <link rel="stylesheet" href="../lib/layui/css/layui.css">
   <link rel="stylesheet" href="../css/torihikisaki-list.css">
   <script src="../lib/layui/layui.js"></script>
-  <script src="../js/Customer.js"></script>
+  <script src="../js/contractManagement.js"></script>
   <script src="../js/from.js"></script>
   <script src="../js/xadmin.js"></script>
-  <title>顧客行動リスト</title>
+  <title>契約管理</title>
 </head>
 
 <body>
   <div class="lookup">
-    <h2>顧客行動計</h2>
+    <h2>契約一覧</h2>
     <input type="text" placeholder="取引先CD">
     <input type="text" placeholder="名前">
-    <input type="text" placeholder="担当者">
-    <input type="text" id="year" 　placeholder="年度" onfocus="this.blur();" placeholder="年度">
-
-    <select>
-      <option value="1">第１四半期</option>
-      <option value="2">第２四半期</option>
-      <option value="3">第３四半期</option>
-      <option value="4">第４四半期</option>
-    </select>
+    <input type="text" id="year" 　placeholder="年度" onfocus="this.blur();" placeholder="契約開始日">
     <input type="button" class="layui-btn" value="確認">
   </div>
 
   <div class="lookup-lower">
-    <!-- 行動計画登録ボタン -->
-    <button class="layui-btn" onclick="xadmin.open('行動計画登録','./Customer-action-plan-add.html-add.html',600,400)"><i
-        class="layui-icon"></i>行動計画登録</button>
-    <!-- 行動計画List -->
+    <!-- 契約登録 -->
+    <button class="layui-btn" onclick="xadmin.open('契約登録','./Contract-management-add.html-add.html',600,400)"><i
+        class="layui-icon"></i>契約登録</button>
+    <!-- 契約List -->
     <table id="customer-records"></table>
   </div>
 </body>
@@ -45,7 +37,7 @@
 
 <script type="text/html" id="iconDemo">
   <a class="layui-btn layui-btn-xs" onclick="xadmin.open('行動計画','./torihikisaki-add.html',600,400)"
-    lay-event="edit">编辑</a>
+    lay-event="edit">更新</a>
   <a class="layui-btn layui-btn-danger layui-btn-xs" onclick="list_del(this,'idを削除します')" lay-event="del">删除</a>
 </script>
 
