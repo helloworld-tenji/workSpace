@@ -33,16 +33,18 @@
                             
                             .btn1 {
                                 margin-left: 210px;
-                                width: 650px;
+                                width: 500px;
+                                float: left;
+                            }
+                            
+                            .btn3 {
+                                padding-top: 360px;
+                                width: 110px;
                                 float: left;
                             }
                             
                             .btn2 {
-                                width: 650px;
-                                float: left;
-                            }
-                            
-                            .btn5 {
+                                width: 500px;
                                 float: left;
                             }
                             

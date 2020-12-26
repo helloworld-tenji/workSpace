@@ -22,7 +22,7 @@
 
     <body>
         <center>
-
+            <h2>営業中止画面</h2>
             <div class="layui-tab">
                 <ul class="layui-tab-title">
                     <li class="layui-this">要員詳細</li>
@@ -121,115 +121,19 @@
                                 <td>単価(万円):</td>
                                 <td>40</td>
                             </tr>
-                            <tr>
-                                <td>日本語:</td>
-                                <td>n1以上</td>
-                            </tr>
+
                         </table>
 
                     </div>
-                    <div class="layui-tab-item">
-                        <table class="layui-table">
 
-
-                            <tr>
-                                <th>4月実施</th>
-                                <td><input type="text" class="in2"></td>
-                            </tr>
-                            <tr>
-                                <th>5月実施</th>
-                                <td><input type="text" class="in2"></td>
-                            </tr>
-                            <tr>
-                                <th>6月実施</th>
-                                <td><input type="text" class="in2"></td>
-                            </tr>
-
-
-                            <tr>
-                                <th>実施結果</th>
-                                <td><input type="text" class="in3"></td>
-
-                            </tr>
-                            <tr>
-                                <th>改善点</th>
-                                <td><input type="text" class="in3"></td>
-
-                            </tr>
-
-
-                        </table>
-                    </div>
-                    <div class="layui-tab-item">
-                        <table class="layui-table">
-
-
-                            <tr>
-                                <th>7月実施</th>
-                                <td><input type="text" class="in2"></td>
-                            </tr>
-                            <tr>
-                                <th>8月実施</th>
-                                <td><input type="text" class="in2"></td>
-                            </tr>
-                            <tr>
-                                <th>9月実施</th>
-                                <td><input type="text" class="in2"></td>
-                            </tr>
-
-
-                            <tr>
-                                <th>実施結果</th>
-                                <td><input type="text" class="in3"></td>
-
-                            </tr>
-                            <tr>
-                                <th>改善点</th>
-                                <td><input type="text" class="in3"></td>
-
-                            </tr>
-
-
-                        </table>
-                    </div>
-                    <div class="layui-tab-item">
-                        <table class="layui-table">
-
-                            <tr>
-                                <th>10月実施</th>
-                                <td><input type="text" class="in2"></td>
-                            </tr>
-                            <tr>
-                                <th>11月実施</th>
-                                <td><input type="text" class="in2"></td>
-                            </tr>
-                            <tr>
-                                <th>12月実施</th>
-                                <td><input type="text" class="in2"></td>
-                            </tr>
-
-
-                            <tr>
-                                <th>実施結果</th>
-                                <td><input type="text" class="in3"></td>
-
-                            </tr>
-                            <tr>
-                                <th>改善点</th>
-                                <td><input type="text" class="in3"></td>
-
-                            </tr>
-
-
-                        </table>
-                    </div>
                 </div>
+            </div>
             </div>
 
             <hr>
 
-            <center> <button class="layui-btn ">戻る</button>
-                <button class="layui-btn ">登録する</button></center>
+            <center> <a class="layui-btn " href="">戻る</a>
+                <a id="delete" class="layui-btn">営業中止</a></center>
 
 
 
@@ -243,14 +147,23 @@
                     //…
                 });
             </script>
+            <script src="./lib/layui/lay/modules/jquery.js" charset="utf-8"></script>
+
+            <script>
+                layui.use('layer', function() {
+                    var $ = layui.jquery,
+                        layer = layui.layer;
+                    $(document).on('click', "#delete", function() {
+                        layer.msg('営業中止しますか', {
+
+                            btn: ['営業中止', '取消', ]
+                        });
+                    });
+
+                });
+            </script>
         </center>
     </body>
-
-
-</html>
-
-
-</body>
 
 
 </html>
