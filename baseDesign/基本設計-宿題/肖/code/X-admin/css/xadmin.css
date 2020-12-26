@@ -32,6 +32,10 @@ body {
     margin-top: 0px;
 }
 
+#yellow {
+    color: blue;
+}
+
 .layui-input:focus,
 .layui-textarea:focus {
     border-color: #189f92!important;
