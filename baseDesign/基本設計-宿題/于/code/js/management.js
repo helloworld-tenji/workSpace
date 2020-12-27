@@ -15,6 +15,7 @@ layui.use('laydate', function(){
       table.render({
         elem: '#management'
         ,url:'../jsonData/management.json'
+        ,toolbar: '#toolbarDemo'
         ,height: 300
         ,cols: [[
           {field:'id', width:80, title: 'ID', sort: true, fixed: 'left'}

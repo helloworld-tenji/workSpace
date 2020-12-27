@@ -1,9 +1,16 @@
+.lookup {
+    position: absolute;
+    left: 1%;
+    bottom: 0;
+    top: 7%;
+
+}
+
 .lower {
     position: absolute;
     left: 1%;
     bottom: 0;
     top: 25%;
-
 }
 
 .lookup-personnel input[type="text"] {
@@ -35,4 +42,36 @@
 
 .div-inline {
     display: inline-block;
+    width: 80%;
+    height: 10%;
+}
+
+.lookup input[type="text"] {
+    width: 120px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.lookup input[type="button"] {
+    width: 120px;
+    height: 25px;
+    line-height: 25px;
+    float: right 10px;
+    vertical-align: middle;
+}
+
+.lookup select {
+    width: 120px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.button {
+    position: absolute;
+    left: 1%;
+    width: 120px;
+    height: 25px;
+    line-height: 25px;
+    float: right 10px;
+    vertical-align: middle;
 }

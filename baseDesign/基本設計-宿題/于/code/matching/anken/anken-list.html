@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="x-admin-sm">
+
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎页面-X-admin2.2</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/xadmin.css">
+    <script src="../../lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../js/xadmin.js"></script>
+</head>
+
+<body>
+    <!-- <div class="x-nav">
+            <span class="layui-breadcrumb">
+                <a href="">首页</a>
+                <a href="">演示</a>
+                <a>
+                    <cite>导航元素</cite></a>
+            </span>
+            <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" onclick="location.reload()" title="刷新">
+                <i class="layui-icon layui-icon-refresh" style="line-height:30px"></i>
+            </a>
+        </div> -->
+    <div class="layui-fluid">
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md12">
+                <div class="layui-card">
+                    <div class="layui-card-body ">
+                        <form class="layui-form layui-col-space5">
+                            <div class="layui-input-inline layui-show-xs-block">
+                                <input type="text" name="username" placeholder="案件名" autocomplete="off"
+                                    class="layui-input" size="30"></div>
+                            <div class="layui-input-inline layui-show-xs-block">
+                                <input type="text" name="username" placeholder="案件概要" autocomplete="off"
+                                    class="layui-input" size="50" 　></div>
+                            <div class="layui-input-inline layui-show-xs-block">
+                                <input type="text" name="username" placeholder="必要スキル" autocomplete="off"
+                                    class="layui-input" size="30"></div>
+                            <div class="layui-input-inline layui-show-xs-block">
+                                <input type="text" name="username" placeholder="場所" autocomplete="off"
+                                    class="layui-input" size="30"></div>
+                            <div class="layui-input-inline layui-show-xs-block">
+                                <select name="contrller">
+                                    <option value="">案件状态</option>
+                                    <option value="0">営業待ち</option>
+                                    <option value="1">営業中（複数要員希望）</option>
+                                    <option value="2">営業完了</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="layui-input-inline layui-show-xs-block">
+                                <input class="layui-input" placeholder="開始日" name="start" id="start"></div>
+                            <div class="layui-input-inline layui-show-xs-block">
+                                <input class="layui-input" placeholder="終了日" name="end" id="end"></div>
+
+
+
+                            <div class="layui-input-inline layui-show-xs-block">
+                                <button class="layui-btn" lay-submit="" lay-filter="sreach">
+                                    <i class="layui-icon">&#xe615;</i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="layui-card-header">
+                        <!-- <button class="layui-btn layui-btn-danger" onclick="delAll()">
+                                <i class="layui-icon"></i>批量删除</button> -->
+                        <button class="layui-btn" onclick="xadmin.open('案件追加','./anken-add.html',800,600)">
+                            <i class="layui-icon"></i>案件追加</button></div>
+                    <div class="layui-card-body ">
+                        <table class="layui-table layui-form">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        番号
+                                    </th>
+                                    <th>案件名</th>
+                                    <th>案件概要</th>
+                                    <th>必要スキル</th>
+                                    <th>案件状態</th>
+                                    <th>場所</th>
+                                    <th>時期</th>
+                                    <th>担当者CD</th>
+                                    <th>更新日時</th>
+                                    <th>更新者</th>
+                                    <th>操作</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>１</td>
+                                    <td>
+                                        <a onclick="xadmin.open('案件詳細','anken-syousai.html' ,800,600)"
+                                            href="javascript:;"><u>AI（機械学習開発）</u> </a>
+                                    </td>
+                                    <td> 新規AIソリューション導入における機械学習部分の開発。 AIモデルの精度改善、OpenCVなどの画像分析ライブラリによる前処理/後処理の実装を行う。
+                                    </td>
+                                    <td>1. RESTfulAPIの実装経験があることが必須。 2. OpenCVなどの画像処理ライブラリの使用経験、Webサイトの構築経験があれば尚よし。
+                                        機械学習モデルの作成、チューニング経験。 機械学習フレームワーク（Scikit-learnやTensorFlowなど）を使ったモデリング経験。
+                                        画像認証システム（画像分類、セグメンテーション、物体検出）、異常検知システム、レコメンデーションシステムなどのモデル作成・チューニング経験。
+                                        自然言語処理システムの開発経験。（形態素解析、意味解析、構文解析、テキスト分類、Chatbotなど）
+                                    </td>
+                                    <td>営業中</td>
+                                    <td>東京23区内</td>
+                                    <td>2020/2/29～9999/99/99</td>
+                                    <td>ショウ</td>
+                                    <td>2020/2/29</td>
+                                    <td>ショウ</td>
+                                    <td class="td-manage">
+                                        <a title="編集" onclick="xadmin.open('编辑','anken-edit.html',800,600)"
+                                            href="javascript:;">
+                                            <i class="layui-icon">&#xe642;</i>
+                                        </a>
+                                        <a title="削除" onclick="member_del(this,'要删除的id')" href="javascript:;">
+                                            <i class="layui-icon">&#xe640;</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td> <a onclick="xadmin.open('案件詳細','anken-syousai.html',800,600)"
+                                            href="javascript:;"><u>AI（機械学習開発）</u> </a>
+                                    </td>
+                                    <td> 新規AIソリューション導入における機械学習部分の開発。 AIモデルの精度改善、OpenCVなどの画像分析ライブラリによる前処理/後処理の実装を行う。
+                                    </td>
+                                    <td>1. RESTfulAPIの実装経験があることが必須。
+                                    </td>
+                                    <td>営業中</td>
+                                    <td>東京23区内</td>
+                                    <td>2020/2/29～9999/99/99</td>
+                                    <td>ショウ</td>
+                                    <td>2020/2/29</td>
+                                    <td>ショウ</td>
+                                    <td class="td-manage">
+                                        <a title="編集" onclick="xadmin.open('编辑','anken-edit.html',800,600)"
+                                            href="javascript:;">
+                                            <i class="layui-icon">&#xe642;</i>
+                                        </a>
+                                        <a title="削除" onclick="member_del(this,'要删除的id')" href="javascript:;">
+                                            <i class="layui-icon">&#xe640;</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="layui-footer  ">
+                    <div class="page">
+                        <div>
+                            <a class="prev" href="">&lt;&lt;</a>
+                            <a class="num" href="">1</a>
+                            <span class="current">2</span>
+                            <a class="num" href="">3</a>
+                            <a class="num" href="">489</a>
+                            <a class="next" href="">&gt;&gt;</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    layui.use(['laydate', 'form'],
+        function () {
+            var laydate = layui.laydate;
+
+            //执行一个laydate实例
+            laydate.render({
+                elem: '#start' //指定元素
+            });
+
+            //执行一个laydate实例
+            laydate.render({
+                elem: '#end' //指定元素
+            });
+        });
+
+    /*用户-停用*/
+    function member_stop(obj, id) {
+        layer.confirm('确认要停用吗？',
+            function (index) {
+
+                if ($(obj).attr('title') == '启用') {
+
+                    //发异步把用户状态进行更改
+                    $(obj).attr('title', '停用');
+                    $(obj).find('i').html('&#xe62f;');
+
+                    $(obj).parents("tr").find(".td-status").find('span').addClass('layui-btn-disabled').html('已停用');
+                    layer.msg('已停用!', {
+                        icon: 5,
+                        time: 1000
+                    });
+
+                } else {
+                    $(obj).attr('title', '启用');
+                    $(obj).find('i').html('&#xe601;');
+
+                    $(obj).parents("tr").find(".td-status").find('span').removeClass('layui-btn-disabled').html(
+                        '已启用');
+                    layer.msg('已启用!', {
+                        icon: 5,
+                        time: 1000
+                    });
+                }
+
+            });
+    }
+
+    /*用户-删除*/
+    function member_del(obj, id) {
+        layer.confirm('削除してもよろしいですか？', {
+            icon: 3,
+            title: 'メッセージ',
+            btn: ['確認', '取消']
+        }, function (index) {
+            //发异步删除数据
+            $(obj).parents("tr").remove();
+            layer.msg('削除しました!', {
+                icon: 1,
+                time: 1000
+            });
+        });
+    }
+</script>
+
+</html>
