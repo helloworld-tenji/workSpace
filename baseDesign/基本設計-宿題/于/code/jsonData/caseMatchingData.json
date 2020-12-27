@@ -1,0 +1,16 @@
+{
+    "code":0,
+    "msg":"",
+    "count":1000,
+    "data":[
+        {
+            "Choice":"",
+            "customerCD":"01",
+            "projectTitle":"xxシステム画面開発",
+            "personInCharge":"于",
+            "operatingTime":"12月〜長期",
+            "actualSpot":"東京都xxx-xxx-1-2-3",
+            "operation":""
+        }
+    ]}
+    

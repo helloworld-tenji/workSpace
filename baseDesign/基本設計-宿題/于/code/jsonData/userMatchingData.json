@@ -1,0 +1,32 @@
+{
+    "code":0,
+    "msg":"",
+    "count":1000,
+    "data":[
+            {
+                "Choice":"",
+                "userId":"001",
+                "name":"于海洋",
+                "department":"開発３部",
+                "status":"稼働中",
+                "operation":""
+            },
+            {
+                "Choice":"",
+                "userId":"001",
+                "name":"于海洋",
+                "department":"開発３部",
+                "status":"稼働中",
+                "operation":""
+            },
+            {
+                "Choice":"",
+                "userId":"001",
+                "name":"于海洋",
+                "department":"開発３部",
+                "status":"待機中",
+                "operation":""
+            }
+
+    ]}
+    
